@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<enumeration>
+    <option color="#F9FF4D" iconURL="/polarion/icons/default/enums/req_status_draft.gif" id="draft"
+        name="Draft" sortOrder="1" />
+    <option color="lightblue" description="Informal Review"
+        iconURL="/polarion/icons/default/enums/req_status_awaiting_review.gif" id="inReview"
+        name="In Review" sortOrder="5" />
+    <option description="Formal approval by Project Manager"
+        iconURL="/polarion/icons/default/enums/testrun_status_review_passed.png" id="inApproval"
+        name="In Approval" sortOrder="14" />
+    <option description="Item is formally approved"
+        iconURL="/polarion/icons/default/enums/approval_approved.gif" id="approved" name="Approved"
+        sortOrder="15" />
+    <option color="#A30000" iconURL="/polarion/icons/default/enums/req_status_rejected.gif"
+        id="deleted" name="Deleted" sortOrder="16" />
+</enumeration>

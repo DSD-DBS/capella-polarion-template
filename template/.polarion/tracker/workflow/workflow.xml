@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<workflow initial-action="init" initial-status="draft" prototype="WorkItem">
+    <transitions>
+        <transition action="rework" from="inReview" to="draft" />
+        <transition action="undelete" from="deleted" to="draft" />
+        <transition action="delete" from="draft" to="deleted" />
+        <transition action="startReview" from="draft" to="inReview" />
+        <transition action="delete" from="inReview" to="deleted" />
+        <transition action="approve" from="inApproval" to="approved" />
+        <transition action="rework" from="inApproval" to="draft" />
+        <transition action="reworkApproved" from="approved" to="draft" />
+        <transition action="startApproval" from="inReview" to="inApproval" />
+    </transitions>
+    <actions>
+        <action id="init" name="Initialization">
+            <cleared>
+                <field name="resolution" />
+            </cleared>
+        </action>
+        <action id="startReview" name="Start Review" />
+        <action id="rework" name="Rework">
+            <cleared>
+                <field name="resolution" />
+            </cleared>
+        </action>
+        <action id="delete" name="Delete">
+            <required>
+                <field name="resolution" />
+            </required>
+        </action>
+        <action id="reworkApproved" name="Rework Approved">
+            <roles>
+                <role name="Project_Manager" />
+            </roles>
+            <cleared>
+                <field name="resolution" />
+            </cleared>
+        </action>
+        <action id="startApproval" name="Start Approval" />
+        <action id="approve" name="Approve">
+            <roles>
+                <role name="Project_Manager" />
+            </roles>
+        </action>
+        <action id="undelete" name="Undelete">
+            <cleared>
+                <field name="resolution" />
+            </cleared>
+        </action>
+    </actions>
+</workflow>

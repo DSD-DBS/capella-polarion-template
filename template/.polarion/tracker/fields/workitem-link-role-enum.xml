@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<enumeration>
+    <option default="true" id="parent" name="has parent" oppositeName="is parent of" parent="true"
+        sortOrder="8">
+        <rule sameType="true" />
+    </option>
+
+    <option description="An Operational Activity Refines an Operational Activity" id="refines"
+        name="refines" oppositeName="is refined by" sortOrder="63">
+        <rule from="operationalActivity" sameType="true" />
+    </option>
+
+    <option description="Capability beschrieben von der FC" id="describes" name="describes"
+        oppositeName="is described by" sortOrder="69">
+        <rule from="systemFunctionalChain" to="systemCapability" />
+        <rule from="isScenario" to="capabilityRealization" />
+    </option>
+
+    <option description="Function beteiligt an der SFC" id="involves" name="involves"
+        oppositeName="is involved by" sortOrder="72">
+        <rule from="systemFunctionalChain" to="systemFunction" />
+        <rule from="systemFunctionalChain" sameType="true" />
+        <rule from="systemFunctionalChain" to="functionalExchange" />
+        <rule from="isScenario" to="logicalComponent" />
+        <rule from="isScenario" to="logicalActor" />
+    </option>
+
+    <option description="SC welche die Funktion ausführt" id="isPerformedBy" name="is performed by"
+        oppositeName="performs" sortOrder="74">
+        <rule from="systemFunction" to="systemComponent, systemActor" />
+        <rule from="logicalFunction" to="logicalComponent" />
+        <rule from="logicalFunction" to="logicalActor" />
+    </option>
+
+    <option description="Subfunktionen" id="subfunction" name="subfunction"
+        oppositeName="superfunction" sortOrder="75">
+        <rule from="systemFunction, logicalFunction" sameType="true" />
+    </option>
+
+    <option id="realizes" name="realizes" oppositeName="is realized by" sortOrder="76">
+        <rule from="systemFunction" to="operationalActivity" />
+        <rule from="functionalExchange" to="operationalInteraction" />
+        <rule from="logicalFunction" to="systemFunction" />
+        <rule from="logicalActor" to="systemActor" />
+        <rule from="capabilityRealization" to="systemCapability" />
+        <rule from="functionalExchange" sameType="true" />
+    </option>
+
+    <option description="SFE welche von der SBE alloziert werden" id="allocated" name="allocated"
+        oppositeName="allocating" sortOrder="77">
+        <rule from="systemFunction" to="systemActor, systemComponent" />
+        <rule from="logicalFunction" to="logicalActor, logicalComponent" />
+        <rule from="logicalComponent" to="logicalComponent" />
+    </option>
+
+    <option id="source" name="source" oppositeName="outgoing exchange" sortOrder="78">
+        <rule from="operationalActivity" to="operationalInteraction" />
+        <rule from="logicalActor, logicalComponent, systemActor, systemComponent"
+            to="componentExchange, communicationMean" />
+    </option>
+
+    <option id="target" name="target" oppositeName="incoming exchange" sortOrder="79">
+        <rule from="operationalActivity" to="operationalInteraction" />
+        <rule from="logicalActor, logicalComponent, systemActor, systemComponent"
+            to="componentExchange, communicationMean" />
+        <rule from="logicalFunction, systemFunction" to="functionalExchange" />
+    </option>
+
+    <option id="ownedMessages" name="owned messages" oppositeName="owner" sortOrder="82">
+        <rule from="isScenario" to="sequenceMessage" />
+    </option>
+
+    <option id="references" name="references" oppositeName="is referenced by" sortOrder="83">
+        <rule from="isScenario" sameType="true" />
+    </option>
+
+    <option id="carries" name="carries" oppositeName="is carried by" sortOrder="84">
+        <rule from="functionalExchange, componentExchange" to="exchangeItem" />
+    </option>
+
+    <option id="requires" name="requires" oppositeName="is required by" sortOrder="85">
+        <rule from="logicalComponent" to="logicalInterface" />
+        <rule from="logicalActor" to="logicalInterface" />
+    </option>
+
+    <option id="provides" name="provides" oppositeName="is provided by" sortOrder="86">
+        <rule from="logicalComponent" to="logicalInterface" />
+        <rule from="logicalActor" to="logicalInterface" />
+    </option>
+
+    <option id="interfaces" name="interfaces" oppositeName="interfaces" sortOrder="87">
+        <rule from="logicalComponent" to="logicalBiDirectionalInterface" />
+        <rule from="logicalActor" to="logicalBiDirectionalInterface" />
+    </option>
+
+    <option id="allocatedFunctionalExchange" name="allocatedFunctional Exchange"
+        oppositeName="allocatingBehavioral Exchange" sortOrder="88">
+        <rule to="functionalExchange" />
+    </option>
+
+    <option id="contains" name="contains" oppositeName="is contained by" sortOrder="89">
+        <rule from="exchangeItem" to="class" />
+    </option>
+
+    <option id="association" name="association" oppositeName="association" sortOrder="90">
+        <rule from="class" sameType="true" />
+    </option>
+
+    <option id="superClass" name="super class" oppositeName="sub class" sortOrder="91">
+        <rule from="class" sameType="true" />
+    </option>
+
+    <option id="groups" name="groups" oppositeName="is grouped by" sortOrder="93">
+        <rule from="logicalBiDirectionalInterface" to="logicalInterface" />
+        <rule from="logicalInterface" to="exchangeItem" />
+    </option>
+
+    <option id="sendingComponent" name="sending component" oppositeName="sends" sortOrder="94">
+        <rule from="sequenceMessage" to="logicalComponent" />
+    </option>
+
+    <option id="sendingActor" name="sending actor" oppositeName="sends" sortOrder="95">
+        <rule from="sequenceMessage" to="logicalActor" />
+    </option>
+
+    <option id="receivingComponent" name="receiving component" oppositeName="receives"
+        sortOrder="96">
+        <rule from="sequenceMessage" to="logicalComponent" />
+    </option>
+
+    <option id="receivingActor" name="receiving actor" oppositeName="receives" sortOrder="97">
+        <rule from="sequenceMessage" to="logicalActor" />
+    </option>
+
+    <option id="invokes" name="invokes" oppositeName="is invoked by" sortOrder="98">
+        <rule from="sequenceMessage" to="exchangeItem" />
+    </option>
+
+    <option id="isRelatedTo" name="is related to" oppositeName="relates" sortOrder="99">
+        <rule from="sequenceMessage" to="logicalInterface" />
+    </option>
+
+    <option id="view" name="view" oppositeName="model" sortOrder="104">
+        <rule from="systemFunction, systemFunctionalChain, systemCapability" to="diagram" />
+    </option>
+
+    <option id="subsystem" name="subsystem" oppositeName="supersystem" sortOrder="105">
+        <rule from="logicalComponent" sameType="true" />
+    </option>
+
+    <option description="OA Capability involviert diese Activität" id="involved_activities"
+        name="involves" oppositeName="involved by" sortOrder="107">
+        <rule from="entity" to="operationalActivity" />
+    </option>
+
+    <option description="OA Capability involviert diese Entität" id="involved_entities"
+        name="involves" oppositeName="involved by" sortOrder="108">
+        <rule from="operationalCapability" to="entity" />
+    </option>
+
+    <option id="description_reference" name="references in description"
+        oppositeName="is referenced by in description" sortOrder="109">
+        <rule sameType="true" />
+    </option>
+
+</enumeration>

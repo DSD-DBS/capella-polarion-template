@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<enumeration>
+    <option id="mandatory" name="mandatory" />
+    <option id="optional" name="optional" />
+</enumeration>

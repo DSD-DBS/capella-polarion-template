@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<fields>
+    <field description="Corresponding Capella ID" id="uuid_capella" name="UUID (Capella)"
+        type="string" />
+</fields>

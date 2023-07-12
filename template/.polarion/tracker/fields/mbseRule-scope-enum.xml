@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<enumeration>
+    <option id="overall" name="Overall" />
+    <option id="process" name="Process" />
+    <option id="element" name="Element" />
+    <option id="diagram" name="Diagram" />
+</enumeration>

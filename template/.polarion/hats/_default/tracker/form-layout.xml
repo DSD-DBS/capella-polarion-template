@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<formLayout xmlns="http://polarion.com/schema/WorkItems/FormLayout"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://polarion.com/schema/WorkItems/FormLayout">
+    <horizontal>
+        <vertical>
+            <section>
+                <field id="type" />
+                <field id="project" />
+            </section>
+        </vertical>
+    </horizontal>
+
+    <field id="description" />
+
+    <panel description="Custom Fields">
+        <field
+            id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId" />
+    </panel>
+
+    <field id="comments" />
+    <field id="linkedWorkItems" />
+    <field id="hyperlinks" />
+</formLayout>
