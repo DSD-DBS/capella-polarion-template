@@ -1,0 +1,44 @@
+name: Zip and Publish Template
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  publish-zip:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Zip Template Folder
+      run: zip -r template.zip template
+    - name: Create Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: template-artifact
+        path: template.zip
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          This is the release of the template package (${{ github.ref }}).
+        draft: false
+        prerelease: false
+    - name: Set Template Filename
+      id: set_template_filename
+      run: echo "TEMPLATE_FILENAME=${{ env.TEMPLATE_FILENAME || 'DBS_polarion_project_template' }}" >> $GITHUB_ENV
+    - name: Upload Package
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./${{ env.TEMPLATE_FILENAME }}.zip
+        asset_name: ${{ env.TEMPLATE_FILENAME }}.zip
+        asset_content_type: application/zip
