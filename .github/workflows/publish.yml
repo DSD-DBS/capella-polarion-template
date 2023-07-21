@@ -15,7 +15,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Zip Template Folder
-      run: zip -r template.zip template
+      run: |
+        mkdir ${{ env.TEMPLATE_FILENAME }} && cp -r template/* ${{ env.TEMPLATE_FILENAME }}
+        zip -r ${{ env.TEMPLATE_FILENAME }}.zip ${{ env.TEMPLATE_FILENAME }}
     - name: Create Artifact
       uses: actions/upload-artifact@v3
       with:
@@ -33,9 +35,6 @@ jobs:
           This is the release of the template package (${{ github.ref }}).
         draft: false
         prerelease: false
-    - name: Set Template Filename
-      id: set_template_filename
-      run: echo "TEMPLATE_FILENAME=${{ env.TEMPLATE_FILENAME || 'DBS_polarion_project_template' }}" >> $GITHUB_ENV
     - name: Upload Package
       uses: actions/upload-release-asset@v1
       env:
