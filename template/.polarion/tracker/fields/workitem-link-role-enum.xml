@@ -165,4 +165,19 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule sameType="true" />
     </option>
 
+    <option description="The exchanges connecting the Function." id="exchanges"
+        name="exchange" oppositeName="is exchange on" sortOrder="110">
+        <rule from="systemFunction, logicalFunction, physicalFunction" to="functionalExchange" />
+    </option>
+
+    <option description="Constraints on an object." id="constraints"
+        name="constraint by" oppositeName="constraints" sortOrder="111">
+        <rule from="capability, capabilityRealization" to="constraint" />
+    </option>
+
+    <option description="Scenarios under this Capability." id="scenarios"
+        name="scenario" oppositeName="scenario on" sortOrder="112">
+        <rule from="capability, capabilityRealization" to="scenario" />
+    </option>
+
 </enumeration>
