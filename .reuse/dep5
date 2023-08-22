@@ -3,6 +3,6 @@ Upstream-Name: Polarion DBS Project Template
 Upstream-Contact: Ernst Würger <ernst.wuerger@deutschebahn.com>
 Source: https://github.com/DSD-DBS/capella-polarion-template
 
-Files: template/.polarion/icons/*.gif
+Files: template/.polarion/icons/*
 Copyright: THALES GLOBAL SERVICES
 License: EPL-2.0
