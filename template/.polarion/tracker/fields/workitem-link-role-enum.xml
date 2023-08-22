@@ -177,6 +177,11 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="operationalActivity" to="operationalInteraction"/>
     </option>
 
+    <option description="The exchanges connecting the Function." id="exchanges"
+        name="exchange" oppositeName="is exchange on" sortOrder="110">
+        <rule from="systemFunction, logicalFunction, physicalFunction" to="functionalExchange" />
+    </option>
+
     <option description="Incoming FunctionalExchange on any Function outside of the Operational layer." id="input_exchanges" name="incoming" oppositeName="is input exchange on" sortOrder="113">
         <rule from="systemFunction, logicalFunction" to="functionalExchange"/>
     </option>
@@ -191,6 +196,11 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <option description="Constraints on an object." id="constraints" name="constraint by" oppositeName="constraints">
         <rule from="operationalCapability, systemCapability, capabilityRealization" to="constraint"/>
+    </option>
+
+    <option description="Scenarios under this Capability." id="scenarios"
+        name="scenario" oppositeName="scenario on" sortOrder="112">
+        <rule from="capability, capabilityRealization" to="scenario" />
     </option>
 
 </enumeration>
