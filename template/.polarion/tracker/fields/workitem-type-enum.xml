@@ -2,7 +2,7 @@
 <!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
-    <option description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/project/%project-id%/Capella_Diagram.png" id="diagram" name="Diagram" sortOrder="1"/>
+    <option description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/project/%project-id%/capella_Diagram.png" id="diagram" name="Diagram" sortOrder="1"/>
     <option description="An Operational Capability" iconURL="/polarion/icons/project/%project-id%/Capella_OperationalCapability.gif" id="operationalCapability" name="Operational Capability" sortOrder="2"/>
     <option description="An Operational Entity" iconURL="/polarion/icons/project/%project-id%/DBS_AbstractType_Entity.gif" id="operationalEntity" name="Operational Entity" sortOrder="3"/>
     <option description="An Operational Activity" iconURL="/polarion/icons/project/%project-id%/Capella_OperationalActivity.gif" id="operationalActivity" name="Operational Activity" sortOrder="4"/>
