@@ -2,6 +2,16 @@
 <!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <fields>
-    <field description="Corresponding Capella ID" id="uuid_capella" name="UUID (Capella)"
-        type="string" />
+    <field description="Corresponding Capella ID" id="uuid_capella" name="UUID (Capella)" type="string"/>
+    <field description="A checksum-hash of the work item for efficient comparison for the SET Toolchain." id="checksum" name="Checksum" type="string"/>
+    <field description="Requirement text from a Requirement of type Assumption." id="assumption" name="Assumption" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Availability." id="availability" name="Availability" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Computation." id="computation" name="Computation" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Legal." id="legal" name="Legal" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Performance." id="performance" name="Performance" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Rationale." id="rationale" name="Rationale" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Reliability." id="reliability" name="Reliability" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Safety." id="safety" name="Safety" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Security." id="security" name="Security" type="text/html"/>
+    <field description="Requirement text from a Requirement of type Standards." id="standards" name="Standards" type="text/html"/>
 </fields>
