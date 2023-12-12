@@ -2,5 +2,6 @@
 <!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <fields>
-    <field id="involved_entities_reverse" name="Involved by" type="text/html" />
+    <field id="preCondition" name="Pre Condition" type="text/html" />
+    <field id="postCondition" name="Post Condition" type="text/html" />
 </fields>
