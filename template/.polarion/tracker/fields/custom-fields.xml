@@ -43,4 +43,6 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field description="Grouped links backlinks for outputs." id="outputs_reverse" name="Output in" type="text/html"/>
     <field description="Grouped links backlinks for inputs." id="inputs_reverse" name="Input in" type="text/html"/>
     <field description="Grouped links backlinks for descriptions references." id="description_reference_reverse" name="Referenced in description by" type="text/html"/>
+    <field description="Grouped links for scenarios." id="scenarios" name="Scenarios" type="text/html"/>
+    <field description="Grouped links backlinks for scenarios." id="scenarios_reverse" name="is Scenario in" type="text/html"/>
 </fields>
