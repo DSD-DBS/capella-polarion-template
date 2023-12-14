@@ -16,7 +16,7 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field description="Requirement text from a Requirement of type Standards." id="standards" name="Standards" type="text/html"/>
     <field description="Grouped links for allocated funtions." id="allocated_functions" name="Allocated functions" type="text/html"/>
     <field description="Grouped links for allocated functional exchanges." id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html"/>
-    <field description="Grouped links for exchanged items." id="exchanged_items" name="Exchanged items" type="text/html"/>
+    <field description="Grouped links for exchange items." id="exchange_items" name="Exchange items" type="text/html"/>
     <field description="Grouped links for involved activities." id="involved_activities" name="Involved activities" type="text/html"/>
     <field description="Grouped links for involved entities." id="involved_entities" name="Involved entities" type="text/html"/>
     <field description="Grouped links for diagram elements." id="diagram_elements" name="Diagram elements" type="text/html"/>
@@ -24,7 +24,7 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field description="Grouped links for parent." id="parent" name="Parent" type="text/html"/>
     <field description="Grouped links backlinks for allocated functions." id="allocated_functions_reverse" name="Allocated as a function by" type="text/html"/>
     <field description="Grouped links backlinks for allocated functional exchanges." id="allocated_functional_exchanges_reverse" name="Allocated as a functional Exchange by" type="text/html"/>
-    <field description="Grouped links backlinks for exchanged items." id="exchanged_items_reverse" name="Exchanged item in" type="text/html"/>
+    <field description="Grouped links backlinks for exchange items." id="exchange_items_reverse" name="Exchange item in" type="text/html"/>
     <field description="Grouped links backlinks for involved activities." id="involved_activities_reverse" name="Involved as an activity by" type="text/html"/>
     <field description="Grouped links backlinks for diagram elements." id="diagram_elements_reverse" name="Diagrams" type="text/html"/>
     <field description="Grouped links backlinks for state machines." id="state_machines_reverse" name="State machine in" type="text/html"/>
