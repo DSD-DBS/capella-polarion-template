@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- SPDX-FileCopyrightText: Copyright DB Netz AG and contributors
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
     <option default="true" id="parent" name="has parent" oppositeName="is parent of" parent="true"
@@ -165,16 +165,21 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule sameType="true" />
     </option>
 
-    <option description="Operational Entity allocates these Operational Activities." id="activities" name="allocates" oppositeName="is allocated by" sortOrder="110">
-        <rule from="operationalEntity" to="operationalActivity"/>
+    <option description="Operational Entity allocates these Operational Activities." id="activities"
+        name="allocates" oppositeName="is allocated by" sortOrder="110">
+        <rule from="operationalEntity" to="operationalActivity" />
     </option>
 
-    <option description="An OperationalActivity has incoming OperationalInteractions which transport input data/exchange items." id="inputs" name="incoming" oppositeName="is input on" sortOrder="111">
-        <rule from="operationalActivity" to="operationalInteraction"/>
+    <option
+        description="An OperationalActivity has incoming OperationalInteractions which transport input data/exchange items."
+        id="inputs" name="incoming" oppositeName="is input on" sortOrder="111">
+        <rule from="operationalActivity" to="operationalInteraction" />
     </option>
 
-    <option description="An OperationalActivity has outgoing OperationalInteractions which transport output data/exchange items." id="outputs" name="outgoing" oppositeName="is output on" sortOrder="112">
-        <rule from="operationalActivity" to="operationalInteraction"/>
+    <option
+        description="An OperationalActivity has outgoing OperationalInteractions which transport output data/exchange items."
+        id="outputs" name="outgoing" oppositeName="is output on" sortOrder="112">
+        <rule from="operationalActivity" to="operationalInteraction" />
     </option>
 
     <option description="The exchanges connecting the Function." id="exchanges"
@@ -182,20 +187,27 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="systemFunction, logicalFunction, physicalFunction" to="functionalExchange" />
     </option>
 
-    <option description="Incoming FunctionalExchange on any Function outside of the Operational layer." id="input_exchanges" name="incoming" oppositeName="is input exchange on" sortOrder="113">
-        <rule from="systemFunction, logicalFunction" to="functionalExchange"/>
+    <option
+        description="Incoming FunctionalExchange on any Function outside of the Operational layer."
+        id="input_exchanges" name="incoming" oppositeName="is input exchange on" sortOrder="113">
+        <rule from="systemFunction, logicalFunction" to="functionalExchange" />
     </option>
 
-    <option description="Outgoing FunctionalExchange on any Function outside of the Operational layer." id="output_exchanges" name="outgoing" oppositeName="is output exchange on" sortOrder="114">
-        <rule from="systemFunction, logicalFunction" to="functionalExchange"/>
+    <option
+        description="Outgoing FunctionalExchange on any Function outside of the Operational layer."
+        id="output_exchanges" name="outgoing" oppositeName="is output exchange on" sortOrder="114">
+        <rule from="systemFunction, logicalFunction" to="functionalExchange" />
     </option>
 
-    <option description="Allocated Functions on a Component." id="allocated_functions" name="allocates" oppositeName="is allocated by" sortOrder="115">
-        <rule from="systemComponent, logicalComponent, logicalActor" to="systemFunction, logicalFunction"/>
+    <option description="Allocated Functions on a Component." id="allocated_functions"
+        name="allocates" oppositeName="is allocated by" sortOrder="115">
+        <rule from="systemComponent, logicalComponent, logicalActor"
+            to="systemFunction, logicalFunction" />
     </option>
 
-    <option description="Constraints on an object." id="constraints" name="constraint by" oppositeName="constraints">
-        <rule from="operationalCapability, systemCapability, capabilityRealization" to="constraint"/>
+    <option description="Constraints on an object." id="constraints" name="constraint by"
+        oppositeName="constraints">
+        <rule from="operationalCapability, systemCapability, capabilityRealization" to="constraint" />
     </option>
 
     <option description="Scenarios under this Capability." id="scenarios"
