@@ -125,10 +125,14 @@ SPDX-License-Identifier: Apache-2.0 -->
         iconURL="/polarion/icons/project/%project-id%/PhysicalComponentNode.gif"
         id="physicalComponentNode" name="Physical Component Node" sortOrder="35" />
     <option
+        description="A Component is a constituent part of either the System or Internal Actors. He contributes to their behavior, properties and characteristics, by interacting with other Components and with both Internal and External Actors."
+        iconURL="/polarion/icons/project/%project-id%/PhysicalComponent.gif"
+        id="physicalComponent" name="Physical Component" sortOrder="36" />
+    <option
         description="The Mode of an element defines the kind of element exploitation expected in given use conditions. A Mode is activated by operators. It is usually the result of a design decision and is an expected behavior feature of the element."
-        iconURL="/polarion/icons/project/%project-id%/Mode.gif" id="mode" name="Mode" sortOrder="36" />
+        iconURL="/polarion/icons/project/%project-id%/Mode.gif" id="mode" name="Mode" sortOrder="37" />
     <option
         description="The State of an element characterizes the element behavior in given environmental conditions. A State is activated mainly by external conditions, or by operators. It may be unexpected and even suffered."
         iconURL="/polarion/icons/project/%project-id%/State.gif" id="state" name="State"
-        sortOrder="37" />
+        sortOrder="38" />
 </enumeration>
