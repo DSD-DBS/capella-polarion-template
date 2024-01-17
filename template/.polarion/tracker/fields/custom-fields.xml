@@ -87,4 +87,6 @@ SPDX-License-Identifier: Apache-2.0 -->
         type="text/html" />
     <field description="Grouped links backlinks for scenarios." id="scenarios_reverse"
         name="is Scenario in" type="text/html" />
+    <field description="Context Diagram" id="context_diagram" name="Context Diagram"
+        type="text/html" />
 </fields>
