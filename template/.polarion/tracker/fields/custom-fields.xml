@@ -89,4 +89,6 @@ SPDX-License-Identifier: Apache-2.0 -->
         name="is Scenario in" type="text/html" />
     <field description="Context Diagram" id="context_diagram" name="Context Diagram"
         type="text/html" />
+    <field description="Tree View Diagram" id="tree_view" name="Tree View Diagram"
+        type="text/html" />
 </fields>
