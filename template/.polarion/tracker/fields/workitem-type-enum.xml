@@ -3,13 +3,13 @@
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
     <option description="Graphische representation (Diagram) eines Elements oder mehrere Elementen."
-        iconURL="/polarion/icons/project/%project-id%/capella_Diagram.png" id="diagram"
+        iconURL="/polarion/icons/project/%project-id%/Capella_Diagram.png" id="diagram"
         name="Diagram" sortOrder="1" />
     <option description="An Operational Capability"
         iconURL="/polarion/icons/project/%project-id%/Capella_OperationalCapability.gif"
         id="operationalCapability" name="Operational Capability" sortOrder="2" />
     <option description="An Operational Entity"
-        iconURL="/polarion/icons/project/%project-id%/DBS_AbstractType_Entity.gif"
+        iconURL="/polarion/icons/project/%project-id%/Capella_Entity.gif"
         id="operationalEntity" name="Operational Entity" sortOrder="3" />
     <option description="An Operational Activity"
         iconURL="/polarion/icons/project/%project-id%/Capella_OperationalActivity.gif"
@@ -94,7 +94,7 @@ SPDX-License-Identifier: Apache-2.0 -->
         iconURL="/polarion/icons/project/%project-id%/Capella_CommunicationMean.gif"
         id="communicationMean" name="Communication Mean" sortOrder="27" />
     <option description="A Constraint gives access to the specification."
-        iconURL="/polarion/icons/project/%project-id%/Constraint.gif" id="constraint"
+        iconURL="/polarion/icons/project/%project-id%/Capella_Constraint.gif" id="constraint"
         name="Constraint" sortOrder="28" />
     <option
         description="Scenarios describe dynamic, time-related interactions between elements: Operational Entities and Actors, the System itself, the System Components. These interactions are expressed through temporally ordered Sequence Messages."
@@ -102,37 +102,39 @@ SPDX-License-Identifier: Apache-2.0 -->
         name="Scenario" sortOrder="29" />
     <option
         description="A Physical Path is an ordered set of Physical Links conveying a Component Exchange."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalPath.gif" id="physicalPath"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalPath.gif" id="physicalPath"
         name="Physical Path" sortOrder="30" />
     <option
         description="Physical Links are the communication/transportation means linking Node Physical Components. They carry the Component Exchanges existing between the Behavior Physical Components."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalLink.gif" id="physicalLink"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalLink.gif" id="physicalLink"
         name="Physical Link" sortOrder="31" />
     <option
         description="External entity (user, operator or other system) interacting directly with the System under study."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalActor.gif" id="physicalActor"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalActor.gif" id="physicalActor"
         name="Physical Actor" sortOrder="32" />
     <option
         description="A System/Logical/Physical Function is an action, an operation or a service fulfilled by one Component or Actor. It has input and output Ports, respectively targets and sources of Functional Exchanges (information, data, material, fluid, etc.)."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalFunction.gif" id="physicalFunction"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalFunction.gif"
+        id="physicalFunction"
         name="Physical Function" sortOrder="33" />
     <option
         description="A Component is a constituent part of either the System or Internal Actors. He contributes to their behavior, properties and characteristics, by interacting with other Components and with both Internal and External Actors."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalComponentBehavior.gif"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalComponentBehavior.gif"
         id="physicalComponentBehavior" name="Physical Component Behavior" sortOrder="34" />
     <option
         description="A Component is a constituent part of either the System or Internal Actors. He contributes to their behavior, properties and characteristics, by interacting with other Components and with both Internal and External Actors."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalComponentNode.gif"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalComponentNode.gif"
         id="physicalComponentNode" name="Physical Component Node" sortOrder="35" />
     <option
         description="A Component is a constituent part of either the System or Internal Actors. He contributes to their behavior, properties and characteristics, by interacting with other Components and with both Internal and External Actors."
-        iconURL="/polarion/icons/project/%project-id%/PhysicalComponent.gif"
+        iconURL="/polarion/icons/project/%project-id%/Capella_PhysicalComponent.gif"
         id="physicalComponent" name="Physical Component" sortOrder="36" />
     <option
         description="The Mode of an element defines the kind of element exploitation expected in given use conditions. A Mode is activated by operators. It is usually the result of a design decision and is an expected behavior feature of the element."
-        iconURL="/polarion/icons/project/%project-id%/Mode.gif" id="mode" name="Mode" sortOrder="37" />
+        iconURL="/polarion/icons/project/%project-id%/Capella_Mode.gif" id="mode" name="Mode"
+        sortOrder="37" />
     <option
         description="The State of an element characterizes the element behavior in given environmental conditions. A State is activated mainly by external conditions, or by operators. It may be unexpected and even suffered."
-        iconURL="/polarion/icons/project/%project-id%/State.gif" id="state" name="State"
+        iconURL="/polarion/icons/project/%project-id%/Capella_State.gif" id="state" name="State"
         sortOrder="38" />
 </enumeration>
