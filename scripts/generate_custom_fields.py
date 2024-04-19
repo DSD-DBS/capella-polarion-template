@@ -296,7 +296,7 @@ def generate_custom_field_xml_files(xml_file: pathlib.Path):
             filename = f"{type_id}-custom-fields.xml"
             field_items = [
                 E.field(
-                    id=f"_C2P_{id}",
+                    id=id,
                     type=field["type"],
                     name=field["name"],
                     description=field["description"],
