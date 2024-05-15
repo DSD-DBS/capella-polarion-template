@@ -79,13 +79,19 @@
         display: none;
     }
 
-    td {
+    table:first-of-type {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    table:first-of-type td {
         width: 50% !important;
+        overflow: hidden;
     }
 }
 
 @page {
-    margin: 90px 60px 90px 80px;
+    margin: 60px 40px 60px 40px;
     border-bottom: 1px solid #aaa;
 
     @top-left {
@@ -189,6 +195,8 @@
     }
 
     table {
+        width: 100%;
+        table-layout: auto;
         border-collapse: collapse;
         break-inside: auto;
         break-before: avoid;
@@ -196,6 +204,11 @@
 
     table th {
         break-before: avoid;
+    }
+
+    table td {
+        overflow: hidden;
+        word-break: break-word;
     }
 
     /* table tr:first-child { */
@@ -246,11 +259,15 @@ a {
 
 table {
     width: 100%;
-    table-layout: fixed;
+    table-layout: auto;
 }
 
 table td {
     overflow: hidden;
+}
+
+table th {
+    break-before: avoid;
 }
 
 th {
@@ -272,7 +289,7 @@ td>a {
 }
 
 .header {
-    margin-top: 40px;
+    margin-top: 20px;
     border: none;
 }
 
@@ -295,10 +312,6 @@ ul.toc {
     padding: 0;
     line-height: 12pt;
     font-size: 9pt;
-}
-
-ul.toc,
-ul.toc ul {
     list-style-type: none;
 }
 
@@ -306,30 +319,42 @@ ul.toc ul {
     padding-inline-start: .6em;
     margin-top: .2em;
     margin-bottom: .2em;
+    list-style-type: none;
 }
 
-ul.toc li {
-    /*border-bottom: 1px dotted black;*/
-}
+/* ul.toc li {
+    border-bottom: 1px dotted black;
+} */
 
 ul.toc li>a {
     text-decoration: none;
     color: inherit;
-    display: grid;
-    grid-template-columns: auto max-content;
-    align-items: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul.toc li a .number {
+ul.toc li .number {
     margin-right: .4em;
 }
 
 ul.toc li>a.page-number {
-    float: right;
+    float: none;
+    margin-left: auto;
 }
 
 ul.toc li>a.page-number::after {
     content: target-counter(attr(href), page);
+}
+
+ul.toc li>a::before {
+    content: attr(data-chapter);
+    margin-right: 1em;
+    white-space: nowrap;
+}
+
+ul.toc li>a:hover {
+    text-decoration: underline;
 }
 
 table {
