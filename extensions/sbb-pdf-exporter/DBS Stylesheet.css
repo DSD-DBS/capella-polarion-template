@@ -78,16 +78,6 @@
         content: none;
         display: none;
     }
-
-    table:first-of-type {
-        width: 100%;
-        table-layout: fixed;
-    }
-
-    table:first-of-type td {
-        width: 50% !important;
-        overflow: hidden;
-    }
 }
 
 @page {
@@ -97,31 +87,37 @@
     @top-left {
         content: element(top-left);
         display: none;
+        padding-bottom: -25px;
     }
 
     @top-center {
         content: element(top-center);
         width: 100%;
+        padding-bottom: -25px;
     }
 
     @top-right {
         content: element(top-right);
         display: none;
+        padding-bottom: -25px;
     }
 
     @bottom-left {
         content: element(bottom-left);
         display: none;
+        padding-top: 25px;
     }
 
     @bottom-center {
         content: element(bottom-center);
         width: 100%;
+        padding-top: 25px;
     }
 
     @bottom-right {
         content: element(bottom-right);
         display: none;
+        padding-top: 25px;
     }
 }
 
@@ -194,6 +190,16 @@
         break-after: avoid;
     }
 
+    /*
+    table:first-of-type {
+        table-layout: fixed !important;
+    }
+
+    table:first-of-type td {
+        width: 50% !important;
+        overflow: hidden;
+    }*/
+
     table {
         width: 100%;
         table-layout: auto;
@@ -253,6 +259,9 @@ ol {
 }
 
 a {
+    max-width: 100%;
+    height: auto;
+    display: block;
     text-decoration: none;
     color: #197FA2;
 }
@@ -278,6 +287,10 @@ td>a {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+td>a>img {
+    width: 100% !important;
 }
 
 .header,
