@@ -60,13 +60,15 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <option id="_C2P_source" name="source" oppositeName="outgoing exchange" sortOrder="78">
         <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
-        <rule from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
+        <rule
+            from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
             to="_C2P_componentExchange, _C2P_communicationMean" />
     </option>
 
     <option id="_C2P_target" name="target" oppositeName="incoming exchange" sortOrder="79">
         <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
-        <rule from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
+        <rule
+            from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
             to="_C2P_componentExchange, _C2P_communicationMean" />
         <rule from="_C2P_logicalFunction, _C2P_systemFunction" to="_C2P_functionalExchange" />
     </option>
@@ -80,7 +82,9 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
 
     <option id="_C2P_exchange_items" name="carries" oppositeName="is carried by" sortOrder="84">
-        <rule from="_C2P_functionalExchange, _C2P_componentExchange , _C2P_logicalfunctionalExchange, _C2P_systemfunctionalExchange" to="_C2P_exchangeItem" />
+        <rule
+            from="_C2P_functionalExchange, _C2P_componentExchange , _C2P_logicalFunctionalExchange, _C2P_systemFunctionalExchange"
+            to="_C2P_exchangeItem" />
     </option>
 
     <option id="_C2P_requires" name="requires" oppositeName="is required by" sortOrder="85">
@@ -98,8 +102,10 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_logicalActor" to="_C2P_logicalBiDirectionalInterface" />
     </option>
 
-    <option id="_C2P_allocated_functional_exchanges" name="allocates" oppositeName="is allocated by" sortOrder="88">
-        <rule from="_C2P_componentExchange, _C2P_communicationMean" to="_C2P_functionalExchange, _C2P_operationalInteraction"/>
+    <option id="_C2P_allocated_functional_exchanges" name="allocates" oppositeName="is allocated by"
+        sortOrder="88">
+        <rule from="_C2P_componentExchange, _C2P_communicationMean"
+            to="_C2P_functionalExchange, _C2P_operationalInteraction" />
     </option>
 
     <option id="_C2P_contains" name="contains" oppositeName="is contained by" sortOrder="89">
@@ -145,7 +151,8 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
 
     <option id="_C2P_view" name="view" oppositeName="model" sortOrder="104">
-        <rule from="_C2P_systemFunction, _C2P_systemFunctionalChain, _C2P_systemCapability" to="_C2P_diagram" />
+        <rule from="_C2P_systemFunction, _C2P_systemFunctionalChain, _C2P_systemCapability"
+            to="_C2P_diagram" />
     </option>
 
     <option id="_C2P_subsystem" name="subsystem" oppositeName="supersystem" sortOrder="105">
@@ -187,7 +194,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <option description="The exchanges connecting the Function." id="_C2P_exchanges"
         name="exchange" oppositeName="is exchange on" sortOrder="110">
-        <rule from="_C2P_systemFunction, _C2P_logicalFunction, _C2P_physicalFunction" to="_C2P_functionalExchange" />
+        <rule from="_C2P_systemFunction, _C2P_logicalFunction, _C2P_physicalFunction"
+            to="_C2P_functionalExchange" />
     </option>
 
     <option
@@ -212,7 +220,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <option description="Constraints on an object." id="_C2P_constraints" name="constraint by"
         oppositeName="constraints">
-        <rule from="_C2P_operationalCapability, _C2P_systemCapability, _C2P_capabilityRealization" to="_C2P_constraint" />
+        <rule from="_C2P_operationalCapability, _C2P_systemCapability, _C2P_capabilityRealization"
+            to="_C2P_constraint" />
     </option>
 
     <option description="Scenarios under this Capability." id="_C2P_scenarios"
@@ -220,13 +229,15 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_capability, _C2P_capabilityRealization" to="_C2P_scenario" />
     </option>
 
-    <option description="Linking to elements viewable in a diagram." id="_C2P_diagram_elements" name="shows" oppositeName="is shown in">
-        <rule from="_C2P_diagram"/>
+    <option description="Linking to elements viewable in a diagram." id="_C2P_diagram_elements"
+        name="shows" oppositeName="is shown in">
+        <rule from="_C2P_diagram" />
     </option>
 
-    <option description="A Function realizes a lower-layer Function." id="_C2P_realized_functions" name="realized" oppositeName="realized in">
-        <rule from="_C2P_physicalFunction" to="_C2P_logicalFunction"/>
-        <rule from="_C2P_logicalFunction" to="_C2P_systemFunction"/>
-        <rule from="_C2P_systemFunction" to="_C2P_operationalActivity"/>
+    <option description="A Function realizes a lower-layer Function." id="_C2P_realized_functions"
+        name="realized" oppositeName="realized in">
+        <rule from="_C2P_physicalFunction" to="_C2P_logicalFunction" />
+        <rule from="_C2P_logicalFunction" to="_C2P_systemFunction" />
+        <rule from="_C2P_systemFunction" to="_C2P_operationalActivity" />
     </option>
 </enumeration>
