@@ -152,7 +152,7 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <option id="_C2P_view" name="view" oppositeName="model" sortOrder="104">
         <rule from="_C2P_systemFunction, _C2P_systemFunctionalChain, _C2P_systemCapability"
-            to="_C2P_diagram" />
+            to="diagram" />
     </option>
 
     <option id="_C2P_subsystem" name="subsystem" oppositeName="supersystem" sortOrder="105">
@@ -229,9 +229,9 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_capability, _C2P_capabilityRealization" to="_C2P_scenario" />
     </option>
 
-    <option description="Linking to elements viewable in a diagram." id="_C2P_diagram_elements"
+    <option description="Linking to elements viewable in a diagram." id="diagram_elements"
         name="shows" oppositeName="is shown in">
-        <rule from="_C2P_diagram" />
+        <rule from="diagram" />
     </option>
 
     <option description="A Function realizes a lower-layer Function." id="_C2P_realized_functions"
