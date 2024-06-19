@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
-SPDX-License-Identifier: Apache-2.0 -->
-<fields>
-    <field id="preCondition" name="Pre Condition" type="string" />
-    <field id="postCondition" name="Post Condition" type="string" />
-</fields>
