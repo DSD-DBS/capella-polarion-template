@@ -1,0 +1,851 @@
+{
+  "ExchangeItem": {
+    "exchange_items_reverse": {
+      "name": "Exchange item in",
+      "description": "Grouped links backlinks for exchange items.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "StateMachine": {
+    "state_machines_reverse": {
+      "name": "State machine in",
+      "description": "Grouped links backlinks for state machines.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "Scenario": {
+    "scenarios_reverse": {
+      "name": "is Scenario in",
+      "description": "Grouped links backlinks for scenarios.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "SystemComponent": {
+    "allocated_functions": {
+      "name": "Allocated functions",
+      "description": "Grouped links for allocated funtions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "LogicalComponent": {
+    "allocated_functions": {
+      "name": "Allocated functions",
+      "description": "Grouped links for allocated funtions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "PhysicalComponent": {
+    "allocated_functions": {
+      "name": "Allocated functions",
+      "description": "Grouped links for allocated funtions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "ComponentExchange": {
+    "allocated_functional_exchanges": {
+      "name": "Allocated functional exchanges",
+      "description": "Grouped links for allocated functional exchanges.",
+      "type": "text/html"
+    },
+    "exchange_items": {
+      "name": "Exchange items",
+      "description": "Grouped links for exchange items.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "FunctionalExchange": {
+    "exchange_items": {
+      "name": "Exchange items",
+      "description": "Grouped links for exchange items.",
+      "type": "text/html"
+    },
+    "output_exchanges_reverse": {
+      "name": "Output exchange in",
+      "description": "Grouped links backlinks for output functional exchanges.",
+      "type": "text/html"
+    },
+    "input_exchanges_reverse": {
+      "name": "Input exchange in",
+      "description": "Grouped links backlinks for input functional exchanges.",
+      "type": "text/html"
+    },
+    "allocated_functional_exchanges_reverse": {
+      "name": "Allocated as a functional Exchange by",
+      "description": "Grouped links backlinks for allocated functional exchanges.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "PhysicalLink": {
+    "involved_links_reverse": {
+      "name": "Involved exchange in",
+      "description": "Grouped links backlinks for involve",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "OperationalCapability": {
+    "scenarios": {
+      "name": "Scenarios",
+      "description": "Grouped links for scenarios.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "Diagram": {
+    "diagram_elements": {
+      "name": "Diagram elements",
+      "description": "Grouped links for diagram elements.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "Class": {
+    "state_machines": {
+      "name": "State machines",
+      "description": "Grouped links for state machines.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "SystemFunction": {
+    "output_exchanges": {
+      "name": "Output exchanges",
+      "description": "Grouped links for output functional exchanges.",
+      "type": "text/html"
+    },
+    "input_exchanges": {
+      "name": "Input exchanges",
+      "description": "Grouped links for input functional exchanges.",
+      "type": "text/html"
+    },
+    "allocated_functions_reverse": {
+      "name": "Allocated as a function by",
+      "description": "Grouped links backlinks for allocated functions.",
+      "type": "text/html"
+    },
+    "realized_functions": {
+      "name": "Realized functions",
+      "description": "Realized functions of a SystemFunction.",
+      "type": "text/html"
+    },
+    "realized_functions_reverse": {
+      "name": "Realizing functions",
+      "description": "Grouped links backlinks for realized functions.",
+      "type": "text/html"
+    },
+    "involved_functions_reverse": {
+      "name": "Involved function in",
+      "description": "Grouped links backlinks for involved_functions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "LogicalFunction": {
+    "output_exchanges": {
+      "name": "Output exchanges",
+      "description": "Grouped links for output functional exchanges.",
+      "type": "text/html"
+    },
+    "input_exchanges": {
+      "name": "Input exchanges",
+      "description": "Grouped links for input functional exchanges.",
+      "type": "text/html"
+    },
+    "allocated_functions_reverse": {
+      "name": "Allocated as a function by",
+      "description": "Grouped links backlinks for allocated functions.",
+      "type": "text/html"
+    },
+    "realized_functions": {
+      "name": "Realized functions",
+      "description": "Realized functions of a SystemFunction.",
+      "type": "text/html"
+    },
+    "realized_functions_reverse": {
+      "name": "Realizing functions",
+      "description": "Grouped links backlinks for realized functions.",
+      "type": "text/html"
+    },
+    "involved_functions_reverse": {
+      "name": "Involved function in",
+      "description": "Grouped links backlinks for involved_functions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "PhysicalFunction": {
+    "output_exchanges": {
+      "name": "Output exchanges",
+      "description": "Grouped links for output functional exchanges.",
+      "type": "text/html"
+    },
+    "input_exchanges": {
+      "name": "Input exchanges",
+      "description": "Grouped links for input functional exchanges.",
+      "type": "text/html"
+    },
+    "allocated_functions_reverse": {
+      "name": "Allocated as a function by",
+      "description": "Grouped links backlinks for allocated functions.",
+      "type": "text/html"
+    },
+    "realized_functions": {
+      "name": "Realized functions",
+      "description": "Realized functions of a SystemFunction.",
+      "type": "text/html"
+    },
+    "realized_functions_reverse": {
+      "name": "Realizing functions",
+      "description": "Grouped links backlinks for realized functions.",
+      "type": "text/html"
+    },
+    "involved_functions_reverse": {
+      "name": "Involved function in",
+      "description": "Grouped links backlinks for involved_functions.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "Entity": {
+    "activities": {
+      "name": "Activities",
+      "description": "Grouped links for activities.",
+      "type": "text/html"
+    },
+    "involved_entities_reverse": {
+      "name": "Involved by",
+      "description": "Grouped links backlinks for involved entities.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "OperationalActivity": {
+    "outputs": {
+      "name": "Outputs",
+      "description": "Grouped links for outputs.",
+      "type": "text/html"
+    },
+    "outputs_reverse": {
+      "name": "Output in",
+      "description": "Grouped links backlinks for outputs.",
+      "type": "text/html"
+    },
+    "inputs": {
+      "name": "Inputs",
+      "description": "Grouped links for inputs.",
+      "type": "text/html"
+    },
+    "inputs_reverse": {
+      "name": "Input in",
+      "description": "Grouped links backlinks for inputs.",
+      "type": "text/html"
+    },
+    "activities_reverse": {
+      "name": "Activity in",
+      "description": "Grouped links backlinks for activities.",
+      "type": "text/html"
+    },
+    "involved_activities_reverse": {
+      "name": "Involved as an activity by",
+      "description": "Grouped links backlinks for involved activities.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "OperationalProcess": {
+    "involved_functions": {
+      "name": "Involved Functions",
+      "description": "Involved functions on a FunctionalChain",
+      "type": "text/html"
+    },
+    "involved_links": {
+      "name": "Involved Links",
+      "description": "Involved exchanges on a FunctionalChain.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "FunctionalChain": {
+    "involved_functions": {
+      "name": "Involved Functions",
+      "description": "Involved functions on a FunctionalChain",
+      "type": "text/html"
+    },
+    "involved_links": {
+      "name": "Involved Links",
+      "description": "Involved exchanges on a FunctionalChain.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "Capability": {
+    "involved_functions": {
+      "name": "Involved Functions",
+      "description": "Involved functions on a FunctionalChain",
+      "type": "text/html"
+    },
+    "involved_links": {
+      "name": "Involved Links",
+      "description": "Involved exchanges on a FunctionalChain.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "CapabilityRealization": {
+    "involved_functions": {
+      "name": "Involved Functions",
+      "description": "Involved functions on a FunctionalChain",
+      "type": "text/html"
+    },
+    "involved_links": {
+      "name": "Involved Links",
+      "description": "Involved exchanges on a FunctionalChain.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
+  "PhysicalPath": {
+    "involved_links": {
+      "name": "Involved Links",
+      "description": "Involved exchanges on a FunctionalChain.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  }
+}
