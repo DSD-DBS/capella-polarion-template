@@ -189,6 +189,11 @@
       "name": "Diagrams",
       "description": "Grouped links backlinks for diagram elements.",
       "type": "text/html"
+    },
+    "physical_links": {
+      "name": "Physical links",
+      "description": "Grouped links for physical links.",
+      "type": "text/html"
     }
   },
   "ComponentExchange": {
@@ -225,6 +230,11 @@
     "diagram_elements_reverse": {
       "name": "Diagrams",
       "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    },
+    "physical_links": {
+      "name": "Physical links",
+      "description": "Grouped links for physical links.",
       "type": "text/html"
     }
   },
@@ -304,6 +314,11 @@
     "diagram_elements_reverse": {
       "name": "Diagrams",
       "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    },
+    "physical_links_reverse": {
+      "name": "Physical link of",
+      "description": "Grouped links backlinks for physical links.",
       "type": "text/html"
     }
   },
