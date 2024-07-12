@@ -16,7 +16,8 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <panel description="Custom Fields">
         <field
-            id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId" />
+            id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId,-checksum"
+            readOnly="true" />
     </panel>
 
     <field id="comments" />

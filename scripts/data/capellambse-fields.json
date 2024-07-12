@@ -1,0 +1,128 @@
+{
+  "OperationalCapability": {
+    "preCondition": {
+      "name": "Pre Condition",
+      "description": "Pre Condition.",
+      "type": "text/html"
+    },
+    "postCondition": {
+      "name": "Post Condition",
+      "description": "Post Condition.",
+      "type": "text/html"
+    },
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "Capability": {
+    "preCondition": {
+      "name": "Pre Condition",
+      "description": "Pre Condition.",
+      "type": "text/html"
+    },
+    "postCondition": {
+      "name": "Post Condition",
+      "description": "Post Condition.",
+      "type": "text/html"
+    },
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "CapabilityRealization": {
+    "preCondition": {
+      "name": "Pre Condition",
+      "description": "Pre Condition.",
+      "type": "text/html"
+    },
+    "postCondition": {
+      "name": "Post Condition",
+      "description": "Post Condition.",
+      "type": "text/html"
+    },
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "Entity": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "OperationalActivity": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "Mission": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "SystemComponent": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "SystemFunction": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "LogicalComponent": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "LogicalFunction": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "PhysicalComponent": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "PhysicalFunction": {
+    "context_diagram": {
+      "name": "Context Diagram",
+      "description": "Context Diagram",
+      "type": "text/html"
+    }
+  },
+  "Class": {
+    "tree_view": {
+      "name": "Tree View Diagram",
+      "description": "Tree View Diagram",
+      "type": "text/html"
+    }
+  },
+  "Constraint": {},
+  "Mode": {},
+  "State": {},
+  "ComponentPort": {},
+  "CommunicationMean": {}
+}
