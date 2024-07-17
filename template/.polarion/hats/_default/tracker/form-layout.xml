@@ -16,7 +16,7 @@ SPDX-License-Identifier: Apache-2.0 -->
     <panel description="Generic Capella Fields">
         <field id="uuid_capella,parent,parent_reverse" readOnly="true" />
     </panel>
-    <panel description="Capella Link Fields">
+    <panel description="Custom Capella Fields">
         <field id="preCondition,postCondition,allocated_functions,allocated_functions_reverse,allocated_functional_exchanges,allocated_functional_exchanges_reverse,exchange_items,exchange_items_reverse,involved_activities,involved_activities_reverse,involved_entities,involved_entities_reverse,diagram_elements,diagram_elements_reverse,state_machines,state_machines_reverse,constraints,constraints_reverse,output_exchanges,output_exchanges_reverse,input_exchanges,input_exchanges_reverse,activities,activities_reverse,outputs,outputs_reverse,inputs,inputs_reverse,description_reference,description_reference_reverse,scenarios,scenarios_reverse,groups,groups_reverse,physical_links,physical_links_reverse,exchanges,exchanges_reverse" readOnly="true" />
     </panel>
     <panel description="Requirement Fields">
