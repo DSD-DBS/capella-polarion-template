@@ -24,8 +24,8 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field id="exchange_items_reverse" description="Grouped links backlinks for exchange items." name="Exchange item in" type="text/html" />
     <field id="involved_activities" description="Grouped links for involved activities." name="Involved activities" type="text/html" />
     <field id="involved_activities_reverse" description="Grouped links backlinks for involved activities." name="Involved as an activity by" type="text/html" />
-    <field id="involved_functions" description="Grouped links for involved functions." name="Involved functions" type="text/html" />
-    <field id="involved_functions_reverse" description="Grouped links backlinks for involved functions." name="Involved as a function by" type="text/html" />
+    <field id="involves" description="Grouped links for involved functions and exchanges for a FunctionalChain." name="Involved" type="text/html" />
+    <field id="involves_reverse" description="Grouped links backlinks for involved functions and exchanges for a FunctionalChain." name="Involved by" type="text/html" />
     <field id="involved_entities" description="Grouped links for involved entities." name="Involved entities" type="text/html" />
     <field id="involved_entities_reverse" description="Grouped links backlinks for involved entities." name="Involved as an entity by" type="text/html" />
     <field id="diagram_elements" description="Grouped links for diagram elements." name="Diagram elements" type="text/html" />
