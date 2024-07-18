@@ -130,6 +130,11 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
     <option id="exchanges" description="The exchanges connecting the Function." name="exchange" oppositeName="is exchange on" sortOrder="110">
         <rule from="systemFunction, logicalFunction, physicalFunction" to="functionalExchange" />
+        <rule from="physicalComponent" to="componentExchange" />
+        <rule from="physicalComponentNode" to="componentExchange" />
+        <rule from="physicalComponentBehavior" to="componentExchange" />
+        <rule from="physicalActor" to="componentExchange" />
+        <rule from="physicalLink" to="componentExchange" />
     </option>
     <option id="input_exchanges" description="Incoming FunctionalExchange on any Function outside of the Operational layer." name="incoming" oppositeName="is input exchange on" sortOrder="113">
         <rule from="systemFunction, logicalFunction" to="functionalExchange" />
