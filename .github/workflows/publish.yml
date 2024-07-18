@@ -16,8 +16,8 @@ jobs:
       uses: actions/checkout@v3
     - name: Update Template Properties
       run: |
-        sed -i "1s|.*|name=DBS MBSE Template Version ${{  github.ref_name }}|" template/template.properties
-        sed -i "2s|.*|description=Standard MBSE Template Project for Deutsche Bahn (DBS), $(date '+%d.%m.%Y')|" template/template.properties
+        sed -i "1s|.*|name=Capella2Polarion Template Version ${{  github.ref_name }}|" template/template.properties
+        sed -i "2s|.*|description=Template for Capella2Polarion Sync-Projects in Polarion, $(date '+%d.%m.%Y')|" template/template.properties
     - name: Zip Template Folder
       run: |
         mkdir ${{ vars.TEMPLATE_FILENAME }} && cp -r template/. ${{ vars.TEMPLATE_FILENAME }}
