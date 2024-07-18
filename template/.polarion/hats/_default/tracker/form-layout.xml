@@ -14,13 +14,26 @@ SPDX-License-Identifier: Apache-2.0 -->
 
     <field id="description" />
     <panel description="Generic Capella Fields">
-        <field id="uuid_capella,parent,parent_reverse" readOnly="true" />
+        <field id="uuid_capella" readOnly="true" />
+        <field id="parent" readOnly="true" />
+        <field id="parent_reverse" readOnly="true" />
     </panel>
     <panel description="Custom Capella Fields">
-        <field id="preCondition,postCondition,allocated_functions,allocated_functions_reverse,allocated_functional_exchanges,allocated_functional_exchanges_reverse,exchange_items,exchange_items_reverse,involved_activities,involved_activities_reverse,involved_entities,involved_entities_reverse,diagram_elements,diagram_elements_reverse,state_machines,state_machines_reverse,constraints,constraints_reverse,output_exchanges,output_exchanges_reverse,input_exchanges,input_exchanges_reverse,activities,activities_reverse,outputs,outputs_reverse,inputs,inputs_reverse,description_reference,description_reference_reverse,scenarios,scenarios_reverse,groups,groups_reverse,physical_links,physical_links_reverse,exchanges,exchanges_reverse" readOnly="true" />
+        <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId,-uuid_capella,-checksum,-parent,-parent_reverse,-assumption,-availability,-computation,-legal,-performance,-rationale,-reliability,-safety,-security,-standards,-context_diagram,-tree_view" readOnly="true" />
+        <field id="context_diagram" readOnly="true" />
+        <field id="tree_view" readOnly="true" />
     </panel>
     <panel description="Requirement Fields">
-        <field id="assumption,availability,computation,legal,performance,rationale,reliability,safety,security,standards" readOnly="true" />
+        <field id="assumption" readOnly="true" />
+        <field id="availability" readOnly="true" />
+        <field id="computation" readOnly="true" />
+        <field id="legal" readOnly="true" />
+        <field id="performance" readOnly="true" />
+        <field id="rationale" readOnly="true" />
+        <field id="reliability" readOnly="true" />
+        <field id="safety" readOnly="true" />
+        <field id="security" readOnly="true" />
+        <field id="standards" readOnly="true" />
     </panel>
     <field id="comments" />
     <field id="linkedWorkItems" />
