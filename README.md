@@ -1,7 +1,7 @@
 <!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 
-# Polarion Project Template
+# Capella2Polarion Project Template
 A Polarion project template with icons and predefined work item types, work
 item type links for Capella model objects.
 
