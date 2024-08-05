@@ -2,242 +2,164 @@
 <!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
-    <option default="true" id="_C2P_parent" name="has parent" oppositeName="is parent of"
-        parent="true"
-        sortOrder="8">
+    <option id="parent" default="true" name="has parent" oppositeName="is parent of" parent="true" sortOrder="8">
         <rule sameType="true" />
     </option>
-
-    <option description="An Operational Activity Refines an Operational Activity" id="_C2P_refines"
-        name="refines" oppositeName="is refined by" sortOrder="63">
-        <rule from="_C2P_operationalActivity" sameType="true" />
+    <option id="refines" description="An Operational Activity Refines an Operational Activity" name="refines" oppositeName="is refined by" sortOrder="63">
+        <rule from="operationalActivity" sameType="true" />
     </option>
-
-    <option description="Capability beschrieben von der FC" id="_C2P_describes" name="describes"
-        oppositeName="is described by" sortOrder="69">
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_systemCapability" />
-        <rule from="_C2P_isScenario" to="_C2P_capabilityRealization" />
+    <option id="describes" description="Capability beschrieben von der FC" name="describes" oppositeName="is described by" sortOrder="69">
+        <rule from="systemFunctionalChain" to="systemCapability" />
+        <rule from="isScenario" to="capabilityRealization" />
     </option>
-
-    <option description="Function beteiligt an der SFC" id="_C2P_involves" name="involves"
-        oppositeName="is involved by" sortOrder="72">
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_systemFunction" />
-        <rule from="_C2P_systemFunctionalChain" sameType="true" />
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_functionalExchange" />
-        <rule from="_C2P_isScenario" to="_C2P_logicalComponent" />
-        <rule from="_C2P_isScenario" to="_C2P_logicalActor" />
+    <option id="involves" description="Function beteiligt an der SFC" name="involves" oppositeName="is involved by" sortOrder="72">
+        <rule from="systemFunctionalChain" to="systemFunction" />
+        <rule from="systemFunctionalChain" sameType="true" />
+        <rule from="systemFunctionalChain" to="functionalExchange" />
+        <rule from="isScenario" to="logicalComponent" />
+        <rule from="isScenario" to="logicalActor" />
     </option>
-
-    <option description="SC welche die Funktion ausführt" id="_C2P_isPerformedBy"
-        name="is performed by"
-        oppositeName="performs" sortOrder="74">
-        <rule from="_C2P_systemFunction" to="_C2P_systemComponent, _C2P_systemActor" />
-        <rule from="_C2P_logicalFunction" to="_C2P_logicalComponent" />
-        <rule from="_C2P_logicalFunction" to="_C2P_logicalActor" />
+    <option id="isPerformedBy" description="SC welche die Funktion ausführt" name="is performed by" oppositeName="performs" sortOrder="74">
+        <rule from="systemFunction" to="systemComponent, systemActor" />
+        <rule from="logicalFunction" to="logicalComponent" />
+        <rule from="logicalFunction" to="logicalActor" />
     </option>
-
-    <option description="Subfunktionen" id="_C2P_subfunction" name="subfunction"
-        oppositeName="superfunction" sortOrder="75">
-        <rule from="_C2P_systemFunction, _C2P_logicalFunction" sameType="true" />
+    <option id="subfunction" description="Subfunktionen" name="subfunction" oppositeName="superfunction" sortOrder="75">
+        <rule from="systemFunction, logicalFunction" sameType="true" />
     </option>
-
-    <option id="_C2P_realizes" name="realizes" oppositeName="is realized by" sortOrder="76">
-        <rule from="_C2P_systemFunction" to="_C2P_operationalActivity" />
-        <rule from="_C2P_functionalExchange" to="_C2P_operationalInteraction" />
-        <rule from="_C2P_logicalFunction" to="_C2P_systemFunction" />
-        <rule from="_C2P_logicalActor" to="_C2P_systemActor" />
-        <rule from="_C2P_capabilityRealization" to="_C2P_systemCapability" />
-        <rule from="_C2P_functionalExchange" sameType="true" />
+    <option id="realizes" name="realizes" oppositeName="is realized by" sortOrder="76">
+        <rule from="systemFunction" to="operationalActivity" />
+        <rule from="functionalExchange" to="operationalInteraction" />
+        <rule from="logicalFunction" to="systemFunction" />
+        <rule from="logicalActor" to="systemActor" />
+        <rule from="capabilityRealization" to="systemCapability" />
+        <rule from="functionalExchange" sameType="true" />
     </option>
-
-    <option description="SFE welche von der SBE alloziert werden" id="_C2P_allocated"
-        name="allocated"
-        oppositeName="allocating" sortOrder="77">
-        <rule from="_C2P_systemFunction" to="_C2P_systemActor, _C2P_systemComponent" />
-        <rule from="_C2P_logicalFunction" to="_C2P_logicalActor, _C2P_logicalComponent" />
-        <rule from="_C2P_logicalComponent" to="_C2P_logicalComponent" />
+    <option id="allocated" description="SFE welche von der SBE alloziert werden" name="allocated" oppositeName="allocating" sortOrder="77">
+        <rule from="systemFunction" to="systemActor, systemComponent" />
+        <rule from="logicalFunction" to="logicalActor, logicalComponent" />
+        <rule from="logicalComponent" to="logicalComponent" />
     </option>
-
-    <option id="_C2P_source" name="source" oppositeName="outgoing exchange" sortOrder="78">
-        <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
-        <rule
-            from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
-            to="_C2P_componentExchange, _C2P_communicationMean" />
+    <option id="source" name="source" oppositeName="outgoing exchange" sortOrder="78">
+        <rule from="operationalActivity" to="operationalInteraction" />
+        <rule from="logicalActor, logicalComponent, systemActor, systemComponent" to="componentExchange, communicationMean" />
     </option>
-
-    <option id="_C2P_target" name="target" oppositeName="incoming exchange" sortOrder="79">
-        <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
-        <rule
-            from="_C2P_logicalActor, _C2P_logicalComponent, _C2P_systemActor, _C2P_systemComponent"
-            to="_C2P_componentExchange, _C2P_communicationMean" />
-        <rule from="_C2P_logicalFunction, _C2P_systemFunction" to="_C2P_functionalExchange" />
+    <option id="target" name="target" oppositeName="incoming exchange" sortOrder="79">
+        <rule from="operationalActivity" to="operationalInteraction" />
+        <rule from="logicalActor, logicalComponent, systemActor, systemComponent" to="componentExchange, communicationMean" />
+        <rule from="logicalFunction, systemFunction" to="functionalExchange" />
     </option>
-
-    <option id="_C2P_ownedMessages" name="owned messages" oppositeName="owner" sortOrder="82">
-        <rule from="_C2P_isScenario" to="_C2P_sequenceMessage" />
+    <option id="ownedMessages" name="owned messages" oppositeName="owner" sortOrder="82">
+        <rule from="isScenario" to="sequenceMessage" />
     </option>
-
-    <option id="_C2P_references" name="references" oppositeName="is referenced by" sortOrder="83">
-        <rule from="_C2P_isScenario" sameType="true" />
+    <option id="references" name="references" oppositeName="is referenced by" sortOrder="83">
+        <rule from="isScenario" sameType="true" />
     </option>
-
-    <option id="_C2P_exchange_items" name="carries" oppositeName="is carried by" sortOrder="84">
-        <rule
-            from="_C2P_functionalExchange, _C2P_componentExchange , _C2P_logicalFunctionalExchange, _C2P_systemFunctionalExchange"
-            to="_C2P_exchangeItem" />
+    <option id="exchange_items" name="carries" oppositeName="is carried by" sortOrder="84">
+        <rule from="functionalExchange, componentExchange , logicalFunctionalExchange, systemFunctionalExchange" to="exchangeItem" />
     </option>
-
-    <option id="_C2P_requires" name="requires" oppositeName="is required by" sortOrder="85">
-        <rule from="_C2P_logicalComponent" to="_C2P_logicalInterface" />
-        <rule from="_C2P_logicalActor" to="_C2P_logicalInterface" />
+    <option id="requires" name="requires" oppositeName="is required by" sortOrder="85">
+        <rule from="logicalComponent" to="logicalInterface" />
+        <rule from="logicalActor" to="logicalInterface" />
     </option>
-
-    <option id="_C2P_provides" name="provides" oppositeName="is provided by" sortOrder="86">
-        <rule from="_C2P_logicalComponent" to="_C2P_logicalInterface" />
-        <rule from="_C2P_logicalActor" to="_C2P_logicalInterface" />
+    <option id="provides" name="provides" oppositeName="is provided by" sortOrder="86">
+        <rule from="logicalComponent" to="logicalInterface" />
+        <rule from="logicalActor" to="logicalInterface" />
     </option>
-
-    <option id="_C2P_interfaces" name="interfaces" oppositeName="interfaces" sortOrder="87">
-        <rule from="_C2P_logicalComponent" to="_C2P_logicalBiDirectionalInterface" />
-        <rule from="_C2P_logicalActor" to="_C2P_logicalBiDirectionalInterface" />
+    <option id="interfaces" name="interfaces" oppositeName="interfaces" sortOrder="87">
+        <rule from="logicalComponent" to="logicalBiDirectionalInterface" />
+        <rule from="logicalActor" to="logicalBiDirectionalInterface" />
     </option>
-
-    <option id="_C2P_allocated_functional_exchanges" name="allocates" oppositeName="is allocated by"
-        sortOrder="88">
-        <rule from="_C2P_componentExchange, _C2P_communicationMean"
-            to="_C2P_functionalExchange, _C2P_operationalInteraction" />
+    <option id="allocated_functional_exchanges" name="allocates" oppositeName="is allocated by" sortOrder="88">
+        <rule from="componentExchange, communicationMean" to="functionalExchange, operationalInteraction" />
     </option>
-
-    <option id="_C2P_contains" name="contains" oppositeName="is contained by" sortOrder="89">
-        <rule from="_C2P_exchangeItem" to="_C2P_class" />
+    <option id="contains" name="contains" oppositeName="is contained by" sortOrder="89">
+        <rule from="exchangeItem" to="class" />
     </option>
-
-    <option id="_C2P_association" name="association" oppositeName="association" sortOrder="90">
-        <rule from="_C2P_class" sameType="true" />
+    <option id="association" name="association" oppositeName="association" sortOrder="90">
+        <rule from="class" sameType="true" />
     </option>
-
-    <option id="_C2P_superClass" name="super class" oppositeName="sub class" sortOrder="91">
-        <rule from="_C2P_class" sameType="true" />
+    <option id="superClass" name="super class" oppositeName="sub class" sortOrder="91">
+        <rule from="class" sameType="true" />
     </option>
-
-    <option id="_C2P_groups" name="groups" oppositeName="is grouped by" sortOrder="93">
-        <rule from="_C2P_logicalBiDirectionalInterface" to="_C2P_logicalInterface" />
-        <rule from="_C2P_logicalInterface" to="_C2P_exchangeItem" />
+    <option id="groups" name="groups" oppositeName="is grouped by" sortOrder="93">
+        <rule from="logicalBiDirectionalInterface" to="logicalInterface" />
+        <rule from="logicalInterface" to="exchangeItem" />
     </option>
-
-    <option id="_C2P_sendingComponent" name="sending component" oppositeName="sends" sortOrder="94">
-        <rule from="_C2P_sequenceMessage" to="_C2P_logicalComponent" />
+    <option id="sendingComponent" name="sending component" oppositeName="sends" sortOrder="94">
+        <rule from="sequenceMessage" to="logicalComponent" />
     </option>
-
-    <option id="_C2P_sendingActor" name="sending actor" oppositeName="sends" sortOrder="95">
-        <rule from="_C2P_sequenceMessage" to="_C2P_logicalActor" />
+    <option id="sendingActor" name="sending actor" oppositeName="sends" sortOrder="95">
+        <rule from="sequenceMessage" to="logicalActor" />
     </option>
-
-    <option id="_C2P_receivingComponent" name="receiving component" oppositeName="receives"
-        sortOrder="96">
-        <rule from="_C2P_sequenceMessage" to="_C2P_logicalComponent" />
+    <option id="receivingComponent" name="receiving component" oppositeName="receives" sortOrder="96">
+        <rule from="sequenceMessage" to="logicalComponent" />
     </option>
-
-    <option id="_C2P_receivingActor" name="receiving actor" oppositeName="receives" sortOrder="97">
-        <rule from="_C2P_sequenceMessage" to="_C2P_logicalActor" />
+    <option id="receivingActor" name="receiving actor" oppositeName="receives" sortOrder="97">
+        <rule from="sequenceMessage" to="logicalActor" />
     </option>
-
-    <option id="_C2P_invokes" name="invokes" oppositeName="is invoked by" sortOrder="98">
-        <rule from="_C2P_sequenceMessage" to="_C2P_exchangeItem" />
+    <option id="invokes" name="invokes" oppositeName="is invoked by" sortOrder="98">
+        <rule from="sequenceMessage" to="exchangeItem" />
     </option>
-
-    <option id="_C2P_isRelatedTo" name="is related to" oppositeName="relates" sortOrder="99">
-        <rule from="_C2P_sequenceMessage" to="_C2P_logicalInterface" />
+    <option id="isRelatedTo" name="is related to" oppositeName="relates" sortOrder="99">
+        <rule from="sequenceMessage" to="logicalInterface" />
     </option>
-
-    <option id="_C2P_view" name="view" oppositeName="model" sortOrder="104">
-        <rule from="_C2P_systemFunction, _C2P_systemFunctionalChain, _C2P_systemCapability"
-            to="_C2P_diagram" />
+    <option id="view" name="view" oppositeName="model" sortOrder="104">
+        <rule from="systemFunction, systemFunctionalChain, systemCapability" to="diagram" />
     </option>
-
-    <option id="_C2P_subsystem" name="subsystem" oppositeName="supersystem" sortOrder="105">
-        <rule from="_C2P_logicalComponent" sameType="true" />
+    <option id="subsystem" name="subsystem" oppositeName="supersystem" sortOrder="105">
+        <rule from="logicalComponent" sameType="true" />
     </option>
-
-    <option description="OA Capability involviert diese Activität" id="_C2P_involved_activities"
-        name="involves" oppositeName="involved by" sortOrder="107">
-        <rule from="_C2P_entity" to="_C2P_operationalActivity" />
+    <option id="involved_activities" description="OA Capability involviert diese Activität" name="involves" oppositeName="involved by" sortOrder="107">
+        <rule from="entity" to="operationalActivity" />
     </option>
-
-    <option description="OA Capability involviert diese Entität" id="_C2P_involved_entities"
-        name="involves" oppositeName="involved by" sortOrder="108">
-        <rule from="_C2P_operationalCapability" to="_C2P_entity" />
+    <option id="involved_entities" description="OA Capability involviert diese Entität" name="involves" oppositeName="involved by" sortOrder="108">
+        <rule from="operationalCapability" to="entity" />
     </option>
-
-    <option id="_C2P_description_reference" name="references in description"
-        oppositeName="is referenced by in description" sortOrder="109">
+    <option id="description_reference" name="references in description" oppositeName="is referenced by in description" sortOrder="109">
         <rule sameType="true" />
     </option>
-
-    <option description="Operational Entity allocates these Operational Activities."
-        id="_C2P_activities"
-        name="allocates" oppositeName="is allocated by" sortOrder="110">
-        <rule from="_C2P_operationalEntity" to="_C2P_operationalActivity" />
+    <option id="activities" description="Operational Entity allocates these Operational Activities." name="allocates" oppositeName="is allocated by" sortOrder="110">
+        <rule from="operationalEntity" to="operationalActivity" />
     </option>
-
-    <option
-        description="An OperationalActivity has incoming OperationalInteractions which transport input data/exchange items."
-        id="_C2P_inputs" name="incoming" oppositeName="is input on" sortOrder="111">
-        <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
+    <option id="inputs" description="An OperationalActivity has incoming OperationalInteractions which transport input data/exchange items." name="incoming" oppositeName="is input on" sortOrder="111">
+        <rule from="operationalActivity" to="operationalInteraction" />
     </option>
-
-    <option
-        description="An OperationalActivity has outgoing OperationalInteractions which transport output data/exchange items."
-        id="_C2P_outputs" name="outgoing" oppositeName="is output on" sortOrder="112">
-        <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
+    <option id="outputs" description="An OperationalActivity has outgoing OperationalInteractions which transport output data/exchange items." name="outgoing" oppositeName="is output on" sortOrder="112">
+        <rule from="operationalActivity" to="operationalInteraction" />
     </option>
-
-    <option description="The exchanges connecting the Function." id="_C2P_exchanges"
-        name="exchange" oppositeName="is exchange on" sortOrder="110">
-        <rule from="_C2P_systemFunction, _C2P_logicalFunction, _C2P_physicalFunction"
-            to="_C2P_functionalExchange" />
+    <option id="exchanges" description="The exchanges connecting the Function." name="exchange" oppositeName="is exchange on" sortOrder="110">
+        <rule from="systemFunction, logicalFunction, physicalFunction" to="functionalExchange" />
+        <rule from="physicalComponent" to="componentExchange" />
+        <rule from="physicalComponentNode" to="componentExchange" />
+        <rule from="physicalComponentBehavior" to="componentExchange" />
+        <rule from="physicalActor" to="componentExchange" />
+        <rule from="physicalLink" to="componentExchange" />
     </option>
-
-    <option
-        description="Incoming FunctionalExchange on any Function outside of the Operational layer."
-        id="_C2P_input_exchanges" name="incoming" oppositeName="is input exchange on"
-        sortOrder="113">
-        <rule from="_C2P_systemFunction, _C2P_logicalFunction" to="_C2P_functionalExchange" />
+    <option id="input_exchanges" description="Incoming FunctionalExchange on any Function outside of the Operational layer." name="incoming" oppositeName="is input exchange on" sortOrder="113">
+        <rule from="systemFunction, logicalFunction" to="functionalExchange" />
     </option>
-
-    <option
-        description="Outgoing FunctionalExchange on any Function outside of the Operational layer."
-        id="_C2P_output_exchanges" name="outgoing" oppositeName="is output exchange on"
-        sortOrder="114">
-        <rule from="_C2P_systemFunction, _C2P_logicalFunction" to="_C2P_functionalExchange" />
+    <option id="output_exchanges" description="Outgoing FunctionalExchange on any Function outside of the Operational layer." name="outgoing" oppositeName="is output exchange on" sortOrder="114">
+        <rule from="systemFunction, logicalFunction" to="functionalExchange" />
     </option>
-
-    <option description="Allocated Functions on a Component." id="_C2P_allocated_functions"
-        name="allocates" oppositeName="is allocated by" sortOrder="115">
-        <rule from="_C2P_systemComponent, _C2P_logicalComponent, _C2P_logicalActor"
-            to="_C2P_systemFunction, _C2P_logicalFunction" />
+    <option id="allocated_functions" description="Allocated Functions on a Component." name="allocates" oppositeName="is allocated by" sortOrder="115">
+        <rule from="systemComponent, logicalComponent, logicalActor" to="systemFunction, logicalFunction" />
     </option>
-
-    <option description="Constraints on an object." id="_C2P_constraints" name="constraint by"
-        oppositeName="constraints">
-        <rule from="_C2P_operationalCapability, _C2P_systemCapability, _C2P_capabilityRealization"
-            to="_C2P_constraint" />
+    <option id="constraints" description="Constraints on an object." name="constraint by" oppositeName="constraints">
+        <rule from="operationalCapability, systemCapability, capabilityRealization" to="constraint" />
     </option>
-
-    <option description="Scenarios under this Capability." id="_C2P_scenarios"
-        name="scenario" oppositeName="scenario on" sortOrder="112">
-        <rule from="_C2P_capability, _C2P_capabilityRealization" to="_C2P_scenario" />
+    <option id="scenarios" description="Scenarios under this Capability." name="scenario" oppositeName="scenario on" sortOrder="112">
+        <rule from="capability, capabilityRealization" to="scenario" />
     </option>
-
-    <option description="Linking to elements viewable in a diagram." id="_C2P_diagram_elements"
-        name="shows" oppositeName="is shown in">
-        <rule from="_C2P_diagram" />
+    <option id="diagram_elements" description="Linking to elements viewable in a diagram." name="shows" oppositeName="is shown in">
+        <rule from="diagram" />
     </option>
-
-    <option description="A Function realizes a lower-layer Function." id="_C2P_realized_functions"
-        name="realized" oppositeName="realized in">
-        <rule from="_C2P_physicalFunction" to="_C2P_logicalFunction" />
-        <rule from="_C2P_logicalFunction" to="_C2P_systemFunction" />
-        <rule from="_C2P_systemFunction" to="_C2P_operationalActivity" />
+    <option id="realized_functions" description="A Function realizes a lower-layer Function." name="realized" oppositeName="realized in">
+        <rule from="physicalFunction" to="logicalFunction" />
+        <rule from="logicalFunction" to="systemFunction" />
+        <rule from="systemFunction" to="operationalActivity" />
+    </option>
+    <option id="physical_links" name="physical links" oppositeName="physical link of" sortOrder="118">
+        <rule from="componentExchange, physicalComponentNode, physicalActor" to="physicalLink"/>
     </option>
 </enumeration>

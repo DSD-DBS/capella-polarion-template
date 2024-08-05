@@ -1,7 +1,7 @@
 <!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 
-# Polarion DBS Project Template
+# Capella2Polarion Project Template
 A Polarion project template with icons and predefined work item types, work
 item type links for Capella model objects.
 
@@ -18,6 +18,13 @@ critical effects on work items in projects which use this template. Changing
 IDs of work item (link) types will corrupt existing work items. They need to be
 patched to the corresponding modifications to the configuration. As this can be
 a tedious task, it may be wise to do this via a migration script.
+
+# Global configuration
+In the global folder there are individual XML enumeration files for configuring
+work items individually. For distinguishing these configuration files from
+others a prefix (``_C2P``) has been used. The custom field XML files can be
+generated from the [script](https://github.com/DSD-DBS/capella-polarion-template/blob/main/scripts/generate_custom_fields.py)
+in the scripts folder.
 
 # Licenses
 
