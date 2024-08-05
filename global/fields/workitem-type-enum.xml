@@ -2,7 +2,7 @@
 <!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
-    <option id="_C2P_diagram" name="Diagram" description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/group/Capella_Diagram.png" sortOrder="1" />
+    <option id="diagram" name="Diagram" description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/group/Capella_Diagram.png" sortOrder="1" />
     <option id="_C2P_operationalCapability" name="Operational Capability" description="An Operational Capability" iconURL="/polarion/icons/group/Capella_OperationalCapability.gif" sortOrder="2" />
     <option id="_C2P_operationalEntity" name="Operational Entity" description="An Operational Entity" iconURL="/polarion/icons/group/Capella_Entity.gif" sortOrder="3" />
     <option id="_C2P_operationalActivity" name="Operational Activity" description="An Operational Activity" iconURL="/polarion/icons/group/Capella_OperationalActivity.gif" sortOrder="4" />
