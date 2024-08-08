@@ -181,7 +181,7 @@ def extract_polarion_types_from_config(config: pathlib.Path) -> dict[str, set[st
     return object_type_to_polarion_type
 
 
-def generate_custom_field_xml_files(xml_file: pathlib.Path):
+def generate_custom_field_xml_files(xml_file: pathlib.Path, type_prefix: str = "_C2P"):
     """Generate custom-fields.xml for every workitem type."""
     tree = etree.parse(xml_file)
     root = tree.getroot()
@@ -189,15 +189,21 @@ def generate_custom_field_xml_files(xml_file: pathlib.Path):
     E = builder.ElementMaker()
     for option in root.findall(".//option"):
         if type_id := option.get("id"):
+            _type_id = type_id.removeprefix(f"{type_prefix}_")
+            _type_id = _type_id[0].upper() + _type_id[1:]
+            if not (fields := CUSTOM_FIELDS.get(_type_id, {})):
+                print(f"No custom fields found for {type_id!r}")
+                continue
+
             filename = f"{type_id}-custom-fields.xml"
             field_items = [
                 E.field(
                     id=id,
-                    type=field["type"],
                     name=field["name"],
                     description=field["description"],
+                    type=field["type"],
                 )
-                for id, field in CUSTOM_FIELDS.items()
+                for id, field in fields.items()
             ]
             generate_xml_file(
                 E.fields(*field_items), dest=xml_file.parent, filename=filename
@@ -232,10 +238,10 @@ def _get_iconURL_map(xml_file: pathlib.Path, type_prefix: str = "") -> dict[str,
 
 # %%
 if __name__ == "__main__":
-    # generate_custom_field_xml_files(GLOBAL_TYPE_ENUM_PATH)
+    generate_custom_field_xml_files(GLOBAL_TYPE_ENUM_PATH)
 
-    config_path = pathlib.Path(...)
-    generate_polarion_config_files(config_path, dest=SCRIPTS_PATH / "config")
+    # config_path = pathlib.Path(...)
+    # generate_polarion_config_files(config_path, dest=SCRIPTS_PATH / "config")
 
 
 # %%

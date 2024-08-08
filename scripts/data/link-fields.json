@@ -63,6 +63,38 @@
       "type": "text/html"
     }
   },
+  "DataPkg": {
+    "classes": {
+      "name": "Classes",
+      "description": "Stored classes in a DataPkg.",
+      "type": "text/html"
+    },
+    "parent": {
+      "name": "Parent",
+      "description": "Grouped links for parent.",
+      "type": "text/html"
+    },
+    "parent_reverse": {
+      "name": "Children",
+      "description": "Grouped links backlinks for parent.",
+      "type": "text/html"
+    },
+    "description_reference": {
+      "name": "Description references",
+      "description": "Grouped links for description references.",
+      "type": "text/html"
+    },
+    "description_reference_reverse": {
+      "name": "Referenced in description by",
+      "description": "Grouped links backlinks for descriptions references.",
+      "type": "text/html"
+    },
+    "diagram_elements_reverse": {
+      "name": "Diagrams",
+      "description": "Grouped links backlinks for diagram elements.",
+      "type": "text/html"
+    }
+  },
   "Scenario": {
     "scenarios_reverse": {
       "name": "is Scenario in",
@@ -390,6 +422,11 @@
     "state_machines": {
       "name": "State machines",
       "description": "Grouped links for state machines.",
+      "type": "text/html"
+    },
+    "classes_reverse": {
+      "name": "Classes",
+      "description": "Grouped links backlinks for classes in a DataPkg.",
       "type": "text/html"
     },
     "parent": {

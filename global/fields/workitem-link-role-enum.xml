@@ -240,4 +240,7 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_logicalFunction" to="_C2P_systemFunction" />
         <rule from="_C2P_systemFunction" to="_C2P_operationalActivity" />
     </option>
+    <option description="Linking to classes stored inside a DataPkg." id="_C2P_classes" name="Classes" oppositeName="class in">
+        <rule from="_C2P_dataPkg" to="_C2P_class" />
+    </option>
 </enumeration>

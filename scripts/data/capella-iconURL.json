@@ -36,5 +36,6 @@
   "PhysicalComponentNode": "/polarion/icons/project/%project-id%/Capella_PhysicalComponentNode.gif",
   "PhysicalComponent": "/polarion/icons/project/%project-id%/Capella_PhysicalComponent.gif",
   "Mode": "/polarion/icons/project/%project-id%/Capella_Mode.gif",
-  "State": "/polarion/icons/project/%project-id%/Capella_State.gif"
+  "State": "/polarion/icons/project/%project-id%/Capella_State.gif",
+  "DataPkg": "/polarion/icons/project/%project-id%/Capella_DataPkg.gif"
 }
