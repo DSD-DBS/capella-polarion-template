@@ -58,6 +58,4 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field id="exchanges_reverse" name="exchanges in" description="Grouped backlinks for Component Exchanges und Physical Links." type="text/html" />
     <field id="context_diagram" name="Context Diagram" description="Context Diagram" type="text/html" />
     <field id="tree_view" name="Tree View Diagram" description="Tree View Diagram" type="text/html" />
-    <field id="classes" name="Classes" description="Stored classes in a DataPkg." type="text/html" />
-    <field id="classes_reverse" name="Classes in" description="Grouped links backlinks for classes in a DataPkg." type="text/html" />
 </fields>

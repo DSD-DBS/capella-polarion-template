@@ -56,6 +56,4 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="involved_links_reverse" type="text/html" name="Involved exchange in" description="Grouped links backlinks for involve"/>
   <field id="realized_functions" type="text/html" name="Realized functions" description="Realized functions of a SystemFunction."/>
   <field id="realized_functions_reverse" type="text/html" name="Realizing functions" description="Grouped links backlinks for realized functions."/>
-  <field id="classes" name="Classes" description="Stored classes in a DataPkg." type="text/html"/>
-  <field id="classes_reverse" name="Classes in" description="Grouped links backlinks for classes in a DataPkg." type="text/html"/>
 </fields>
