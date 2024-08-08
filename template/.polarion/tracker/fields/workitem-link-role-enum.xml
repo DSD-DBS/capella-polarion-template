@@ -162,4 +162,7 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="physical_links" name="physical links" oppositeName="physical link of" sortOrder="118">
         <rule from="componentExchange, physicalComponentNode, physicalActor" to="physicalLink"/>
     </option>
+    <option description="Linking to classes stored inside a DataPkg." id="_C2P_classes" name="Classes" oppositeName="class in">
+        <rule from="dataPkg" to="class" />
+    </option>
 </enumeration>
