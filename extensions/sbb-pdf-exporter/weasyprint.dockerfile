@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+# SPDX-License-Identifier: Apache-2.0
+
 FROM python:3.12.3-slim
 LABEL maintainer="Polarion Team at SBB <polarion-opensource@sbb.ch>"
 
