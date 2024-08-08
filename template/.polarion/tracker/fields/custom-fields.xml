@@ -2,60 +2,60 @@
 <!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
 SPDX-License-Identifier: Apache-2.0 -->
 <fields>
-    <field id="uuid_capella" description="Corresponding Capella ID" name="UUID (Capella)" type="string" />
-    <field id="checksum" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain." name="Checksum" type="string" />
-    <field id="preCondition" description="Pre Condition" name="Pre Condition" type="text/html" />
-    <field id="postCondition" description="Post Condition" name="Post Condition" type="text/html" />
-    <field id="assumption" description="Requirement text from a Requirement of type Assumption." name="Assumption" type="text/html" />
-    <field id="availability" description="Requirement text from a Requirement of type Availability." name="Availability" type="text/html" />
-    <field id="computation" description="Requirement text from a Requirement of type Computation." name="Computation" type="text/html" />
-    <field id="legal" description="Requirement text from a Requirement of type Legal." name="Legal" type="text/html" />
-    <field id="performance" description="Requirement text from a Requirement of type Performance." name="Performance" type="text/html" />
-    <field id="rationale" description="Requirement text from a Requirement of type Rationale." name="Rationale" type="text/html" />
-    <field id="reliability" description="Requirement text from a Requirement of type Reliability." name="Reliability" type="text/html" />
-    <field id="safety" description="Requirement text from a Requirement of type Safety." name="Safety" type="text/html" />
-    <field id="security" description="Requirement text from a Requirement of type Security." name="Security" type="text/html" />
-    <field id="standards" description="Requirement text from a Requirement of type Standards." name="Standards" type="text/html" />
-    <field id="allocated_functions" description="Grouped links for allocated funtions." name="Allocated functions" type="text/html" />
-    <field id="allocated_functions_reverse" description="Grouped links backlinks for allocated functions." name="Allocated as a function by" type="text/html" />
-    <field id="allocated_functional_exchanges" description="Grouped links for allocated functional exchanges." name="Allocated functional exchanges" type="text/html" />
-    <field id="allocated_functional_exchanges_reverse" description="Grouped links backlinks for allocated functional exchanges." name="Allocated as a functional Exchange by" type="text/html" />
-    <field id="exchange_items" description="Grouped links for exchange items." name="Exchange items" type="text/html" />
-    <field id="exchange_items_reverse" description="Grouped links backlinks for exchange items." name="Exchange item in" type="text/html" />
-    <field id="involved_activities" description="Grouped links for involved activities." name="Involved activities" type="text/html" />
-    <field id="involved_activities_reverse" description="Grouped links backlinks for involved activities." name="Involved as an activity by" type="text/html" />
-    <field id="involves" description="Grouped links for involved functions and exchanges for a FunctionalChain." name="Involved" type="text/html" />
-    <field id="involves_reverse" description="Grouped links backlinks for involved functions and exchanges for a FunctionalChain." name="Involved by" type="text/html" />
-    <field id="involved_entities" description="Grouped links for involved entities." name="Involved entities" type="text/html" />
-    <field id="involved_entities_reverse" description="Grouped links backlinks for involved entities." name="Involved as an entity by" type="text/html" />
-    <field id="diagram_elements" description="Grouped links for diagram elements." name="Diagram elements" type="text/html" />
-    <field id="diagram_elements_reverse" description="Grouped links backlinks for diagram elements." name="Diagrams" type="text/html" />
-    <field id="state_machines" description="Grouped links for state machines." name="State machines" type="text/html" />
-    <field id="state_machines_reverse" description="Grouped links backlinks for state machines." name="State machine in" type="text/html" />
-    <field id="parent" description="Grouped links for parent." name="Parent" type="text/html" />
-    <field id="parent_reverse" description="Grouped links backlinks for parent." name="Children" type="text/html" />
-    <field id="constraints" description="Grouped links for constraints." name="Constraints" type="text/html" />
-    <field id="constraints_reverse" description="Grouped links backlinks for constraints." name="Constraints" type="text/html" />
-    <field id="output_exchanges" description="Grouped links for output functional exchanges." name="Output exchanges" type="text/html" />
-    <field id="output_exchanges_reverse" description="Grouped links backlinks for output functional exchanges." name="Output exchange in" type="text/html" />
-    <field id="input_exchanges" description="Grouped links for input functional exchanges." name="Input exchanges" type="text/html" />
-    <field id="input_exchanges_reverse" description="Grouped links backlinks for input functional exchanges." name="Input exchange in" type="text/html" />
-    <field id="activities" description="Grouped links for activities." name="Activities" type="text/html" />
-    <field id="activities_reverse" description="Grouped links backlinks for activities." name="Activity in" type="text/html" />
-    <field id="outputs" description="Grouped links for outputs." name="Outputs" type="text/html" />
-    <field id="outputs_reverse" description="Grouped links backlinks for outputs." name="Output in" type="text/html" />
-    <field id="inputs" description="Grouped links for inputs." name="Inputs" type="text/html" />
-    <field id="inputs_reverse" description="Grouped links backlinks for inputs." name="Input in" type="text/html" />
-    <field id="description_reference" description="Grouped links for description references." name="Description references" type="text/html" />
-    <field id="description_reference_reverse" description="Grouped links backlinks for descriptions references." name="Referenced in description by" type="text/html" />
-    <field id="scenarios" description="Grouped links for scenarios." name="Scenarios" type="text/html" />
-    <field id="scenarios_reverse" description="Grouped links backlinks for scenarios." name="is Scenario in" type="text/html" />
-    <field id="groups" description="Groups" name="Groups" type="text/html" />
-    <field id="groups_reverse" description="Groups reverse" name="Grouped by" type="text/html" />
-    <field id="physical_links" description="Grouped links for physical links." name="Physical Links" type="text/html"/>
-    <field id="physical_links_reverse" description="Grouped links backlinks for physical links." name="Physical Link of" type="text/html"/>
-    <field id="exchanges" description="Grouped links for Component Exchanges und Physical Links." name="exchanges" type="text/html"/>
-    <field id="exchanges_reverse" description="Grouped backlinks for Component Exchanges und Physical Links." name="exchanges in" type="text/html"/>
-    <field id="context_diagram" description="Context Diagram" name="Context Diagram" type="text/html" />
-    <field id="tree_view" description="Tree View Diagram" name="Tree View Diagram" type="text/html" />
+    <field id="uuid_capella" name="UUID (Capella)" description="Corresponding Capella ID" type="string" />
+    <field id="checksum" name="Checksum" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain." type="string" />
+    <field id="preCondition" name="Pre Condition" description="Pre Condition" type="text/html" />
+    <field id="postCondition" name="Post Condition" description="Post Condition" type="text/html" />
+    <field id="assumption" name="Assumption" description="Requirement text from a Requirement of type Assumption." type="text/html" />
+    <field id="availability" name="Availability" description="Requirement text from a Requirement of type Availability." type="text/html" />
+    <field id="computation" name="Computation" description="Requirement text from a Requirement of type Computation." type="text/html" />
+    <field id="legal" name="Legal" description="Requirement text from a Requirement of type Legal." type="text/html" />
+    <field id="performance" name="Performance" description="Requirement text from a Requirement of type Performance." type="text/html" />
+    <field id="rationale" name="Rationale" description="Requirement text from a Requirement of type Rationale." type="text/html" />
+    <field id="reliability" name="Reliability" description="Requirement text from a Requirement of type Reliability." type="text/html" />
+    <field id="safety" name="Safety" description="Requirement text from a Requirement of type Safety." type="text/html" />
+    <field id="security" name="Security" description="Requirement text from a Requirement of type Security." type="text/html" />
+    <field id="standards" name="Standards" description="Requirement text from a Requirement of type Standards." type="text/html" />
+    <field id="allocated_functions" name="Allocated functions" description="Grouped links for allocated funtions." type="text/html" />
+    <field id="allocated_functions_reverse" name="Allocated as a function by" description="Grouped links backlinks for allocated functions." type="text/html" />
+    <field id="allocated_functional_exchanges" name="Allocated functional exchanges" description="Grouped links for allocated functional exchanges." type="text/html" />
+    <field id="allocated_functional_exchanges_reverse" name="Allocated as a functional Exchange by" description="Grouped links backlinks for allocated functional exchanges." type="text/html" />
+    <field id="exchange_items" name="Exchange items" description="Grouped links for exchange items." type="text/html" />
+    <field id="exchange_items_reverse" name="Exchange item in" description="Grouped links backlinks for exchange items." type="text/html" />
+    <field id="involved_activities" name="Involved activities" description="Grouped links for involved activities." type="text/html" />
+    <field id="involved_activities_reverse" name="Involved as an activity by" description="Grouped links backlinks for involved activities." type="text/html" />
+    <field id="involves" name="Involved" description="Grouped links for involved functions and exchanges for a FunctionalChain." type="text/html" />
+    <field id="involves_reverse" name="Involved by" description="Grouped links backlinks for involved functions and exchanges for a FunctionalChain." type="text/html" />
+    <field id="involved_entities" name="Involved entities" description="Grouped links for involved entities." type="text/html" />
+    <field id="involved_entities_reverse" name="Involved as an entity by" description="Grouped links backlinks for involved entities." type="text/html" />
+    <field id="diagram_elements" name="Diagram elements" description="Grouped links for diagram elements." type="text/html" />
+    <field id="diagram_elements_reverse" name="Diagrams" description="Grouped links backlinks for diagram elements." type="text/html" />
+    <field id="state_machines" name="State machines" description="Grouped links for state machines." type="text/html" />
+    <field id="state_machines_reverse" name="State machine in" description="Grouped links backlinks for state machines." type="text/html" />
+    <field id="parent" name="Parent" description="Grouped links for parent." type="text/html" />
+    <field id="parent_reverse" name="Children" description="Grouped links backlinks for parent." type="text/html" />
+    <field id="constraints" name="Constraints" description="Grouped links for constraints." type="text/html" />
+    <field id="constraints_reverse" name="Constraints" description="Grouped links backlinks for constraints." type="text/html" />
+    <field id="output_exchanges" name="Output exchanges" description="Grouped links for output functional exchanges." type="text/html" />
+    <field id="output_exchanges_reverse" name="Output exchange in" description="Grouped links backlinks for output functional exchanges." type="text/html" />
+    <field id="input_exchanges" name="Input exchanges" description="Grouped links for input functional exchanges." type="text/html" />
+    <field id="input_exchanges_reverse" name="Input exchange in" description="Grouped links backlinks for input functional exchanges." type="text/html" />
+    <field id="activities" name="Activities" description="Grouped links for activities." type="text/html" />
+    <field id="activities_reverse" name="Activity in" description="Grouped links backlinks for activities." type="text/html" />
+    <field id="outputs" name="Outputs" description="Grouped links for outputs." type="text/html" />
+    <field id="outputs_reverse" name="Output in" description="Grouped links backlinks for outputs." type="text/html" />
+    <field id="inputs" name="Inputs" description="Grouped links for inputs." type="text/html" />
+    <field id="inputs_reverse" name="Input in" description="Grouped links backlinks for inputs." type="text/html" />
+    <field id="description_reference" name="Description references" description="Grouped links for description references." type="text/html" />
+    <field id="description_reference_reverse" name="Referenced in description by" description="Grouped links backlinks for descriptions references." type="text/html" />
+    <field id="scenarios" name="Scenarios" description="Grouped links for scenarios." type="text/html" />
+    <field id="scenarios_reverse" name="is Scenario in" description="Grouped links backlinks for scenarios." type="text/html" />
+    <field id="groups" name="Groups" description="Groups" type="text/html" />
+    <field id="groups_reverse" name="Grouped by" description="Groups reverse" type="text/html" />
+    <field id="physical_links" name="Physical Links" description="Grouped links for physical links." type="text/html" />
+    <field id="physical_links_reverse" name="Physical Link of" description="Grouped links backlinks for physical links." type="text/html" />
+    <field id="exchanges" name="exchanges" description="Grouped links for Component Exchanges und Physical Links." type="text/html" />
+    <field id="exchanges_reverse" name="exchanges in" description="Grouped backlinks for Component Exchanges und Physical Links." type="text/html" />
+    <field id="context_diagram" name="Context Diagram" description="Context Diagram" type="text/html" />
+    <field id="tree_view" name="Tree View Diagram" description="Tree View Diagram" type="text/html" />
 </fields>
