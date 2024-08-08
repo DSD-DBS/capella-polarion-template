@@ -1,16 +1,5 @@
 /* FONT DEFINITIONS */
 @font-face {
-    font-family: "Selawik";
-    src: url("/polarion/ria/fonts/selawik/selawk.ttf");
-}
-
-@font-face {
-    font-family: "Selawik";
-    src: url("/polarion/ria/fonts/selawik/selawkb.ttf");
-    font-weight: bold;
-}
-
-@font-face {
     font-family: "Open Sans";
     src: url("/polarion/ria/fonts/opensans/OpenSans-Regular.ttf");
 }
@@ -35,114 +24,126 @@
 }
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
-    src: url('/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
-        url('/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
-        url('/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
-        url('/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+    font-family: "FontAwesome";
+    src: url("/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3");
+    src: url("/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"),
+        url("/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"),
+        url("/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"),
+        url("/polarion/ria/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
-@page :first {
-    margin: 0 0 0 0;
-    border-bottom: none;
-
-    @top-left {
-        content: none;
-        display: none;
-    }
-
-    @top-center {
-        content: none;
-        display: 100%;
-    }
-
-    @top-right {
-        content: none;
-        display: none;
-    }
-
-    @bottom-left {
-        content: none;
-        display: none;
-    }
-
-    @bottom-center {
-        content: none;
-        display: none;
-    }
-
-    @bottom-right {
-        content: none;
-        display: none;
-    }
+body {
+    font-size: 10pt;
+    font-family: Arial, "Open Sans", sans-serif !important;
+    box-sizing: border-box;
 }
 
-@page {
-    margin: 60px 40px 60px 40px;
-    border-bottom: 1px solid #aaa;
-
-    @top-left {
-        content: element(top-left);
-        display: none;
-        padding-bottom: -25px;
-    }
-
-    @top-center {
-        content: element(top-center);
-        width: 100%;
-        padding-bottom: -25px;
-    }
-
-    @top-right {
-        content: element(top-right);
-        display: none;
-        padding-bottom: -25px;
-    }
-
-    @bottom-left {
-        content: element(bottom-left);
-        display: none;
-        padding-top: 25px;
-    }
-
-    @bottom-center {
-        content: element(bottom-center);
-        width: 100%;
-        padding-top: 25px;
-    }
-
-    @bottom-right {
-        content: element(bottom-right);
-        display: none;
-        padding-top: 25px;
-    }
+.content .title {
+    font-size: 2em;
+    font-weight: 600;
+    /* padding-bottom: 0.5em; */
+    border-bottom: 1px solid #ccc;
 }
 
-@page land {
-    size: a4 landscape;
+p,
+ul,
+ol {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 
-@page port {
-    size: a4 portrait;
+a {
+    text-decoration: none;
+    color: #197fa2;
+}
+
+th {
+    background: #eee;
+}
+
+.header,
+.footer {
+    display: none;
+    font-size: 0.6em;
+    font-weight: normal;
+    color: #7f7f7f;
+}
+
+.header {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.footer {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.page-number .number::after {
+    content: counter(page);
+    margin-right: 2px;
+}
+
+.page-number .pages::after {
+    content: counter(pages);
+    margin-left: 2px;
+}
+
+ul.toc {
+    padding: 0;
+    line-height: 1.4em;
+}
+
+ul.toc,
+ul.toc ul {
+    list-style-type: none;
+}
+
+ul.toc ul {
+    padding-inline-start: 0.6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+ul.toc li {
+    border-bottom: 1px dotted black;
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+ul.toc li>a {
+    display: table-cell;
+    padding-right: 5em;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.toc-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+ul.toc li a .number {
+    margin-right: 0.4em;
+}
+
+ul.toc li>a.page-number {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 0;
+}
+
+ul.toc li>a.page-number::after {
+    content: target-counter(attr(href), page);
 }
 
 @media print {
-    body {
-        padding-right: 10px;
-    }
-
-    body::before {
-        font-size: 8em;
-        text-transform: uppercase;
-        color: rgba(255, 5, 5, 0.17);
-        position: fixed;
-        top: 35%;
-        left: -8%;
-        transform: rotate(-45deg);
-    }
 
     .header,
     .footer {
@@ -174,10 +175,10 @@
     }
 
     h1 {
-        margin-top: 5px;
-        font-size: 18pt;
+        margin-top: 1em;
+        font-size: 1.2em;
         page-break-after: avoid;
-        break-after: avoid;
+        page-break-inside: avoid;
     }
 
     h2,
@@ -185,211 +186,303 @@
     h4,
     h5,
     h6 {
-        font-size: 14pt;
+        font-size: 1em;
         page-break-after: avoid;
-        break-after: avoid;
+        page-break-inside: avoid;
     }
-
-    /*
-    table:first-of-type {
-        table-layout: fixed !important;
-    }
-
-    table:first-of-type td {
-        width: 50% !important;
-        overflow: hidden;
-    }*/
 
     table {
-        width: 100%;
-        table-layout: auto;
+        max-width: 100% !important;
+        float: none !important;
+        /* Fixes content inside of table breaking bug */
         border-collapse: collapse;
-        break-inside: auto;
-        break-before: avoid;
     }
 
-    table th {
-        break-before: avoid;
+    table thead tr {
+        page-break-after: avoid;
     }
-
-    table td {
-        overflow: hidden;
-        word-break: break-word;
-    }
-
-    /* table tr:first-child { */
-    /* page-break-after: avoid; */
-    /* break-after: avoid; */
-    /* } */
-
-    /* table tr:last-child {
-        page-break-before: avoid;
-        break-before: avoid;
-    } */
 
     .polarion-dle-workitem-title {
         page-break-after: avoid;
-        break-after: avoid;
     }
 
-    .polarion-dle-workitem-basic-0>span {
-        page-break-after: avoid;
-        break-after: avoid;
+    .polarion-dle-workitem-basic-internal {
+        page-break-after: auto;
+        page-break-inside: auto;
+        page-break-before: auto;
+    }
+
+    img {
+        break-before: auto;
+        break-inside: avoid;
+        page-break-after: auto;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    tr {
+        /* Fixes unpleasant breaking of work item custom field tables */
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 }
 
-body {
-    font-size: .96em;
-    font-family: "Segoe UI", "Selawik", "Open Sans", Ubuntu, Arial, sans-serif !important;
-    box-sizing: border-box;
+@page :first {
+    margin: 60px 60px 60px 60px;
+    border-bottom: none;
+
+    @top-left {
+        content: none;
+    }
+
+    @top-center {
+        content: none;
+    }
+
+    @top-right {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+
+    @bottom-center {
+        content: none;
+    }
+
+    @bottom-right {
+        content: none;
+    }
+
+    img {
+        width: 118% !important;
+        height: auto !important;
+        max-width: none !important;
+        display: block;
+        margin: -60px -60px -60px -60px;
+    }
 }
 
-.content .title {
-    font-size: 24pt;
-    font-weight: 600;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
+@page {
+    margin: 60px 60px 60px 60px;
+    border-bottom: 1px solid #aaa;
+
+    @top-left {
+        content: element(top-left);
+        display: none;
+    }
+
+    @top-center {
+        content: element(top-center);
+        width: 100%;
+    }
+
+    @top-right {
+        content: element(top-right);
+        display: none;
+    }
+
+    @bottom-left {
+        content: element(bottom-left);
+        display: none;
+    }
+
+    @bottom-center {
+        content: element(bottom-center);
+        width: 100%;
+    }
+
+    @bottom-right {
+        content: element(bottom-right);
+        display: none;
+    }
 }
 
-p,
-ul,
-ol {
-    margin-top: .8em;
-    margin-bottom: .8em;
+.portA5 {
+    page: portA5;
 }
 
-a {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    text-decoration: none;
-    color: #197FA2;
+.landA5 {
+    page: landA5;
 }
 
-table {
-    width: 100%;
-    table-layout: auto;
+.portA4 {
+    page: portA4;
 }
 
-table td {
-    overflow: hidden;
+.landA4 {
+    page: landA4;
 }
 
-table th {
-    break-before: avoid;
+.portA3 {
+    page: portA3;
 }
 
-th {
-    background: #eee;
+.landA3 {
+    page: landA3;
 }
 
-td>a {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.portB5 {
+    page: portB5;
 }
 
-td>a>img {
-    width: 100% !important;
+.landB5 {
+    page: landB5;
 }
 
-.header,
-.footer {
-    display: none;
-    font-size: .6em;
-    font-weight: normal;
-    color: #7F7F7F;
+.portB4 {
+    page: portB4;
 }
 
-.header {
-    margin-top: 20px;
-    border: none;
+.landB4 {
+    page: landB4;
 }
 
-.footer {
-    margin-top: 10px;
-    margin-bottom: 70px;
+.portJIS_B5 {
+    page: portJIS_B5;
 }
 
-.page-number .number::after {
-    content: counter(page);
-    margin-right: 2px;
+.landJIS_B5 {
+    page: landJIS_B5;
 }
 
-.page-number .pages::after {
-    content: counter(pages);
-    margin-left: 2px;
+.portJIS_B4 {
+    page: portJIS_B4;
 }
 
-ul.toc {
-    padding: 0;
-    line-height: 12pt;
-    font-size: 9pt;
-    list-style-type: none;
+.landJIS_B4 {
+    page: landJIS_B4;
 }
 
-ul.toc ul {
-    padding-inline-start: .6em;
-    margin-top: .2em;
-    margin-bottom: .2em;
-    list-style-type: none;
+.portLETTER {
+    page: portLETTER;
 }
 
-/* ul.toc li {
-    border-bottom: 1px dotted black;
-} */
-
-ul.toc li>a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.landLETTER {
+    page: landLETTER;
 }
 
-ul.toc li .number {
-    margin-right: .4em;
+.portLEGAL {
+    page: portLEGAL;
 }
 
-ul.toc li>a.page-number {
-    float: none;
-    margin-left: auto;
+.landLEGAL {
+    page: landLEGAL;
 }
 
-ul.toc li>a.page-number::after {
-    content: target-counter(attr(href), page);
+.portLEDGER {
+    page: portLEDGER;
 }
 
-ul.toc li>a::before {
-    content: attr(data-chapter);
-    margin-right: 1em;
-    white-space: nowrap;
+.landLEDGER {
+    page: landLEDGER;
 }
 
-ul.toc li>a:hover {
-    text-decoration: underline;
+@page landA5 {
+    size: A5 landscape;
+    margin: 90px 40px 60px 60px;
 }
 
-table {
-    max-width: 100%;
-    float: none !important;
+@page portA5 {
+    size: A5 portrait;
+    margin: 90px 40px 60px 60px;
+}
+
+@page landA4 {
+    size: A4 landscape;
+}
+
+@page portA4 {
+    size: A4 portrait;
+}
+
+@page landA3 {
+    size: A3 landscape;
+    margin: 140px 80px 110px 100px;
+}
+
+@page portA3 {
+    size: A3 portrait;
+    margin: 140px 80px 110px 100px;
+}
+
+@page landB5 {
+    size: B5 landscape;
+    margin: 90px 40px 60px 60px;
+}
+
+@page portB5 {
+    size: B5 portrait;
+    margin: 90px 40px 60px 60px;
+}
+
+@page landB4 {
+    size: B4 landscape;
+}
+
+@page portB4 {
+    size: B4 portrait;
+}
+
+@page landJIS_B5 {
+    size: JIS-B5 landscape;
+    margin: 90px 40px 60px 60px;
+}
+
+@page portJIS_B5 {
+    size: JIS-B5 portrait;
+    margin: 90px 40px 60px 60px;
+}
+
+@page landJIS_B4 {
+    size: JIS-B4 landscape;
+}
+
+@page portJIS_B4 {
+    size: JIS-B4 portrait;
+}
+
+@page landLETTER {
+    size: letter landscape;
+}
+
+@page portLETTER {
+    size: letter portrait;
+}
+
+@page landLEGAL {
+    size: legal landscape;
+    margin: 140px 80px 110px 100px;
+}
+
+@page portLEGAL {
+    size: legal portrait;
+    margin: 140px 80px 110px 100px;
+}
+
+@page landLEDGER {
+    size: ledger landscape;
+    margin: 140px 80px 110px 100px;
+}
+
+@page portLEDGER {
+    size: ledger portrait;
+    margin: 140px 80px 110px 100px;
 }
 
 .sbb_page_break {
     page-break-before: always;
-    max-height: 0;
-}
-
-.port {
-    page: port;
-}
-
-.land {
-    page: land;
+    display: block;
 }
 
 .polarion-WorkItemsMacro-table td {
     word-break: break-all;
+}
+
+.polarion-Document-table td {
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 div.errormessage,
@@ -400,22 +493,22 @@ div.plainmessage {
     width: 95%;
     margin: 4px 5px;
     padding: 16px 4px 16px 36px;
-    background: #F5F5F5 url(/polarion/wiki/skins/sidecar/msg.png) 10px 18px no-repeat;
+    background: #f5f5f5 url(/polarion/wiki/skins/sidecar/msg.png) 10px 18px no-repeat;
 }
 
 div.infomessage {
     background-image: url(/polarion/ria/images/msginfo.png);
-    background-color: #D8E4F1;
+    background-color: #d8e4f1;
 }
 
 div.warningmessage {
     background-image: url("/polarion/ria/images/error_occured.gif");
-    background-color: #FFFFCE;
+    background-color: #ffffce;
 }
 
 div.errormessage {
     background-image: url("/polarion/ria/images/warning.gif");
-    background-color: #FFCCCC;
+    background-color: #ffcccc;
 }
 
 div.plainmessage {
@@ -427,7 +520,7 @@ div.hint {
     color: gray;
     margin: 10px;
     padding: 10px;
-    border: 1px dotted #DDDDDD;
+    border: 1px dotted #dddddd;
 }
 
 div.code {
@@ -445,9 +538,10 @@ div.code {
 }
 
 pre {
-    font-family: "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier, monospace;
+    font-family: "Bitstream Vera Sans Mono", "Courier New", Monaco, Courier,
+        monospace;
     overflow: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 0 12px;
 }
 
@@ -461,21 +555,23 @@ pre {
 
 .polarion-dle-workitem-fields-end-table {
     border-collapse: collapse;
-    border: 1px solid #CCCCCC;
-    /* margin-top: 5px;
-    margin-bottom: 10px; */
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    page-break-before: avoid;
 }
 
 .polarion-dle-workitem-fields-end-table-label {
     padding: 4px;
     padding-right: 20px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
+    font-weight: bold;
 }
 
 .polarion-dle-workitem-fields-end-table-value {
     padding: 4px;
     padding-right: 20px;
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
 }
 
 .polarion-dle-captionContainer {
@@ -548,7 +644,7 @@ pre {
 .polarion-BaseDialogCaption {
     height: 48px;
     cursor: move;
-    background-color: #005F87;
+    background-color: #005f87;
     width: 100%;
     padding: 0 16px;
     -moz-border-radius: 4px 4px 0 0;
@@ -560,9 +656,9 @@ pre {
 
 .polarion-BaseDialog-BaseButton {
     display: inline-block;
-    color: #005F87;
+    color: #005f87;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-    border: 1px solid #005F87;
+    border: 1px solid #005f87;
     border-radius: 2px;
     background-color: white;
     min-width: 80px;
@@ -572,17 +668,17 @@ pre {
 }
 
 .polarion-BaseDialog-BaseButton:hover {
-    background-color: #DAECF0;
+    background-color: #daecf0;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
 .polarion-BaseDialog-BaseButton:active {
-    background-color: #AFD7E1;
+    background-color: #afd7e1;
 }
 
 .polarion-BaseDialog-HighContrastButton {
     color: white;
-    background-color: #005F87;
+    background-color: #005f87;
     border: 1px solid #003750;
 }
 
@@ -605,7 +701,7 @@ pre {
     padding: 6px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #EBF0F5;
+    background-color: #ebf0f5;
     white-space: nowrap;
 }
 
@@ -613,7 +709,7 @@ pre {
     padding: 6px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: #F2B9CF;
+    background-color: #f2b9cf;
     white-space: nowrap;
 }
 
@@ -621,7 +717,7 @@ pre {
     background-color: #ccffcc;
 }
 
-tr:over {
+tr:hover {
     background-color: #ccffcc;
     border: 2px;
     border-style: dashed;
@@ -684,7 +780,7 @@ tr:over {
 
 .polarion-Comment-Heading {
     padding-top: 4px;
-    background-color: #F5F7FA;
+    background-color: #f5f7fa;
 }
 
 .polarion-dle-workitem-basic-0 {
@@ -891,6 +987,15 @@ tr:over {
     word-wrap: normal;
 }
 
+.polarion-Icons {
+    vertical-align: bottom;
+    margin-right: 2px;
+}
+
+li span {
+    line-height: 1em !important;
+}
+
 .header-footer-wrapper {
     display: flex;
 }
@@ -900,11 +1005,7 @@ tr:over {
 }
 
 .header-footer-center {
-    flex: 0 0 auto;
     max-width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -977,48 +1078,41 @@ tr:over {
     margin-left: 210px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.content .title {
-    color: #004d73;
+.polarion-rp-column-layout-cell {
+    font-size: 12px;
 }
 
-ol {
-    list-style-type: decimal;
+.polarion-errormessage,
+.polarion-warningmessage,
+.polarion-infomessage,
+.polarion-infomessage-noSideMargin,
+.polarion-plainmessage {
+    text-align: left;
+    margin: 4px 5px;
+    padding: 8px 18px 8px 36px;
+    background-color: #f5f5f5;
 }
 
-ol ol {
-    list-style-type: lower-alpha;
+.polarion-infomessage,
+.polarion-infomessage-noSideMargin {
+    background-color: #d8e4f1;
 }
 
-ol ol ol {
-    list-style-type: lower-roman;
+.polarion-rp-parameters-view {
+    padding: 10px 5px;
+    border: 1px solid #ccc;
 }
 
-ol ol ol ol {
-    list-style-type: decimal;
+table.polarion-rp-column-layout td {
+    padding: 5px;
+    vertical-align: top;
 }
 
-ol ol ol ol ol {
-    list-style-type: lower-alpha;
+.polarion-rp-widget-parameters {
+    display: none;
 }
 
-ol ol ol ol ol ol {
-    list-style-type: lower-roman;
-}
-
-ol ol ol ol ol ol ol {
-    list-style-type: decimal;
-}
-
-ol ol ol ol ol ol ol ol {
-    list-style-type: lower-alpha;
-}
-
-ol ol ol ol ol ol ol ol ol {
-    list-style-type: lower-roman;
+#polarion-rp-parameters,
+#polarion-rp-page-script {
+    display: none;
 }
