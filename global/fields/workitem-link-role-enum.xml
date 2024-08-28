@@ -12,14 +12,14 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
     <option description="Capability beschrieben von der FC" id="_C2P_describes" name="C2P-describes"
         oppositeName="_C2P-_described" sortOrder="69">
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_systemCapability" />
+        <rule from="_C2P_functionalChain" to="_C2P_systemCapability" />
         <rule from="_C2P_isScenario" to="_C2P_capabilityRealization" />
     </option>
     <option description="Function beteiligt an der SFC" id="_C2P_involves" name="C2P-involves"
         oppositeName="_C2P-_involves" sortOrder="72">
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_systemFunction" />
-        <rule from="_C2P_systemFunctionalChain" sameType="true" />
-        <rule from="_C2P_systemFunctionalChain" to="_C2P_functionalExchange" />
+        <rule from="_C2P_functionalChain" to="_C2P_systemFunction" />
+        <rule from="_C2P_functionalChain" sameType="true" />
+        <rule from="_C2P_functionalChain" to="_C2P_functionalExchange" />
         <rule from="_C2P_isScenario" to="_C2P_logicalComponent" />
         <rule from="_C2P_isScenario" to="_C2P_logicalActor" />
     </option>
@@ -64,7 +64,8 @@ SPDX-License-Identifier: Apache-2.0 -->
         sortOrder="82">
         <rule from="_C2P_isScenario" to="_C2P_sequenceMessage" />
     </option>
-    <option id="_C2P_references" name="C2P-references" oppositeName="_C2P-_references" sortOrder="83">
+    <option id="_C2P_references" name="C2P-references" oppositeName="_C2P-_references"
+        sortOrder="83">
         <rule from="_C2P_isScenario" sameType="true" />
     </option>
     <option id="_C2P_exchange_items" name="C2P-carries" oppositeName="_C2P-_carries" sortOrder="84">
@@ -80,11 +81,13 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_logicalComponent" to="_C2P_logicalInterface" />
         <rule from="_C2P_logicalActor" to="_C2P_logicalInterface" />
     </option>
-    <option id="_C2P_interfaces" name="C2P-interfaces" oppositeName="_C2P-_interfaces" sortOrder="87">
+    <option id="_C2P_interfaces" name="C2P-interfaces" oppositeName="_C2P-_interfaces"
+        sortOrder="87">
         <rule from="_C2P_logicalComponent" to="_C2P_logicalBiDirectionalInterface" />
         <rule from="_C2P_logicalActor" to="_C2P_logicalBiDirectionalInterface" />
     </option>
-    <option id="_C2P_allocated_functional_exchanges" name="C2P-allocates" oppositeName="_C2P-_allocates"
+    <option id="_C2P_allocated_functional_exchanges" name="C2P-allocates"
+        oppositeName="_C2P-_allocates"
         sortOrder="88">
         <rule from="_C2P_componentExchange, _C2P_communicationMean"
             to="_C2P_functionalExchange, _C2P_operationalInteraction" />
@@ -92,21 +95,25 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="_C2P_contains" name="C2P-contains" oppositeName="_C2P-_contains" sortOrder="89">
         <rule from="_C2P_exchangeItem" to="_C2P_class" />
     </option>
-    <option id="_C2P_association" name="C2P-association" oppositeName="_C2P-_association" sortOrder="90">
+    <option id="_C2P_association" name="C2P-association" oppositeName="_C2P-_association"
+        sortOrder="90">
         <rule from="_C2P_class" sameType="true" />
     </option>
-    <option id="_C2P_superClass" name="C2P-super class" oppositeName="_C2P-_super class" sortOrder="91">
+    <option id="_C2P_superClass" name="C2P-super class" oppositeName="_C2P-_super class"
+        sortOrder="91">
         <rule from="_C2P_class" sameType="true" />
     </option>
     <option id="_C2P_groups" name="C2P-groups" oppositeName="_C2P-_groups" sortOrder="93">
         <rule from="_C2P_logicalBiDirectionalInterface" to="_C2P_logicalInterface" />
         <rule from="_C2P_logicalInterface" to="_C2P_exchangeItem" />
     </option>
-    <option id="_C2P_sendingComponent" name="C2P-sending component" oppositeName="_C2P-_sending component"
+    <option id="_C2P_sendingComponent" name="C2P-sending component"
+        oppositeName="_C2P-_sending component"
         sortOrder="94">
         <rule from="_C2P_sequenceMessage" to="_C2P_logicalComponent" />
     </option>
-    <option id="_C2P_sendingActor" name="C2P-sending actor" oppositeName="_C2P-_sending actor" sortOrder="95">
+    <option id="_C2P_sendingActor" name="C2P-sending actor" oppositeName="_C2P-_sending actor"
+        sortOrder="95">
         <rule from="_C2P_sequenceMessage" to="_C2P_logicalActor" />
     </option>
     <option id="_C2P_receivingComponent" name="C2P-receiving component"
@@ -120,11 +127,12 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="_C2P_invokes" name="C2P-invokes" oppositeName="_C2P-_invokes" sortOrder="98">
         <rule from="_C2P_sequenceMessage" to="_C2P_exchangeItem" />
     </option>
-    <option id="_C2P_isRelatedTo" name="C2P-is related to" oppositeName="_C2P-_is related to" sortOrder="99">
+    <option id="_C2P_isRelatedTo" name="C2P-is related to" oppositeName="_C2P-_is related to"
+        sortOrder="99">
         <rule from="_C2P_sequenceMessage" to="_C2P_logicalInterface" />
     </option>
     <option id="_C2P_view" name="C2P-view" oppositeName="_C2P-_view" sortOrder="104">
-        <rule from="_C2P_systemFunction, _C2P_systemFunctionalChain, _C2P_systemCapability"
+        <rule from="_C2P_systemFunction, _C2P_functionalChain, _C2P_systemCapability"
             to="diagram" />
     </option>
     <option id="_C2P_subsystem" name="C2P-subsystem" oppositeName="_C2P-_subsystem" sortOrder="105">
@@ -156,7 +164,8 @@ SPDX-License-Identifier: Apache-2.0 -->
         id="_C2P_outputs" name="C2P-outgoing" oppositeName="_C2P-_outgoing" sortOrder="112">
         <rule from="_C2P_operationalActivity" to="_C2P_operationalInteraction" />
     </option>
-    <option description="The exchanges connecting the Function." id="_C2P_exchanges" name="C2P-exchange"
+    <option description="The exchanges connecting the Function." id="_C2P_exchanges"
+        name="C2P-exchange"
         oppositeName="_C2P-_exchange" sortOrder="110">
         <rule from="_C2P_systemFunction, _C2P_logicalFunction, _C2P_physicalFunction"
             to="_C2P_functionalExchange" />
