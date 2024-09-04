@@ -8,6 +8,7 @@ SPDX-License-Identifier: Apache-2.0 -->
             <section>
                 <field id="type" />
                 <field id="project" />
+                <field id="status" readOnly="true" />
             </section>
         </vertical>
     </horizontal>
