@@ -18,6 +18,8 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="systemFunctionalChain" to="functionalExchange" />
         <rule from="isScenario" to="logicalComponent" />
         <rule from="isScenario" to="logicalActor" />
+        <rule from="operationalProcess" to="operationalActivity, entity, operationalInteraction" />
+        <rule from="operationalProcess" sameType="true" />
     </option>
     <option id="isPerformedBy" description="SC welche die Funktion ausführt" name="is performed by" oppositeName="performs" sortOrder="74">
         <rule from="systemFunction" to="systemComponent, systemActor" />
@@ -115,6 +117,9 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
     <option id="involved_entities" description="OA Capability involviert diese Entität" name="involves" oppositeName="involved by" sortOrder="108">
         <rule from="operationalCapability" to="entity" />
+    </option>
+    <option id="involved_processes" description="OA Capability involviert diesen Operational Process" name="involves" oppositeName="involved by" sortOrder="108">
+        <rule from="operationalCapability" to="operationalProcess" />
     </option>
     <option id="description_reference" name="references in description" oppositeName="is referenced by in description" sortOrder="109">
         <rule sameType="true" />
