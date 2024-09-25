@@ -60,6 +60,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="physical_links_reverse" type="text/html" name="Physical Link of" description="Grouped links backlinks for physical links." />
   <field id="exchanges" type="text/html" name="Exchanges" description="Grouped links for ComponentExchanges." />
   <field id="exchanges_reverse" type="text/html" name="Exchanges in" description="Grouped links backlinks for ComponentExchanges." />
+  <field id="involved_processes" type="text/html" name="Involved processes" description="Grouped links for OperationalProcesses." />
+  <field id="involved_processes_reverse" type="text/html" name="Involved in" description="Grouped links backlinks for OperationalProcesses." />
   <!-- ###################################################### Custom ###################################################### -->
   <field id="context_diagram" type="text/html" name="Context Diagram" description="Context Diagram"/>
   <field id="tree_view" type="text/html" name="Tree View Diagram" description="Tree View Diagram"/>
