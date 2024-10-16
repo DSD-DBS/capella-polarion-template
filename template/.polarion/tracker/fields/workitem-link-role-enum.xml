@@ -167,4 +167,7 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="physical_links" name="physical links" oppositeName="physical link of" sortOrder="118">
         <rule from="componentExchange, physicalComponentNode, physicalActor" to="physicalLink"/>
     </option>
+    <option id="properties" name="Properties" oppositeName="Property in" sortOrder="119">
+        <rule from="class" to="property"/>
+    </option>
 </enumeration>
