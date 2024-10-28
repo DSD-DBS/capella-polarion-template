@@ -10,14 +10,14 @@ SPDX-License-Identifier: Apache-2.0 -->
     </option>
     <option id="describes" description="Capability beschrieben von der FC" name="describes" oppositeName="is described by" sortOrder="69">
         <rule from="systemFunctionalChain" to="systemCapability" />
-        <rule from="isScenario" to="capabilityRealization" />
+        <rule from="scenario" to="capabilityRealization" />
     </option>
     <option id="involves" description="Function beteiligt an der SFC" name="involves" oppositeName="is involved by" sortOrder="72">
         <rule from="systemFunctionalChain" to="systemFunction" />
         <rule from="systemFunctionalChain" sameType="true" />
         <rule from="systemFunctionalChain" to="functionalExchange" />
-        <rule from="isScenario" to="logicalComponent" />
-        <rule from="isScenario" to="logicalActor" />
+        <rule from="scenario" to="logicalComponent" />
+        <rule from="scenario" to="logicalActor" />
         <rule from="operationalProcess" to="operationalActivity, entity, operationalInteraction" />
         <rule from="operationalProcess" sameType="true" />
     </option>
@@ -52,10 +52,10 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="logicalFunction, systemFunction" to="functionalExchange" />
     </option>
     <option id="ownedMessages" name="owned messages" oppositeName="owner" sortOrder="82">
-        <rule from="isScenario" to="sequenceMessage" />
+        <rule from="scenario" to="sequenceMessage" />
     </option>
     <option id="references" name="references" oppositeName="is referenced by" sortOrder="83">
-        <rule from="isScenario" sameType="true" />
+        <rule from="scenario" sameType="true" />
     </option>
     <option id="exchange_items" name="carries" oppositeName="is carried by" sortOrder="84">
         <rule from="functionalExchange, componentExchange , logicalFunctionalExchange, systemFunctionalExchange" to="exchangeItem" />
