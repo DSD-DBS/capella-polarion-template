@@ -242,16 +242,6 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for scenarios.",
         "type": "text/html",
     },
-    "context_diagram": {
-        "name": "Context Diagram",
-        "description": "Context Diagram",
-        "type": "text/html",
-    },
-    "tree_view": {
-        "name": "Tree View Diagram",
-        "description": "Tree View Diagram",
-        "type": "text/html",
-    },
     "involved_functions": {
         "name": "Involved Functions",
         "description": "Involved functions on a FunctionalChain",
@@ -282,6 +272,56 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for realized functions.",
         "type": "text/html",
     },
+    "involved_components": {
+        "name": "Involved Components",
+        "description": "Involved components on a Capability.",
+        "type": "text/html",
+    },
+    "involved_components_reverse": {
+        "name": "Involved exchange in",
+        "description": "Grouped links backlinks for involved_components.",
+        "type": "text/html",
+    },
+    "involved_chains": {
+        "name": "Involved Chains",
+        "description": "Involved chains on a Capability or FunctionalChain.",
+        "type": "text/html",
+    },
+    "involved_chains_reverse": {
+        "name": "Involved chain in",
+        "description": "Grouped links backlinks for involved_chains.",
+        "type": "text/html",
+    },
+    "realized_components": {
+        "name": "Realized Components",
+        "description": "Realized components of a Component.",
+        "type": "text/html",
+    },
+    "realized_components_reverse": {
+        "name": "Realizing components",
+        "description": "Grouped links backlinks for realized_components.",
+        "type": "text/html",
+    },
+    "realized_capabilities": {
+        "name": "Realized Capabilities",
+        "description": "Realized capabilities of a Capability.",
+        "type": "text/html",
+    },
+    "realized_capabilities_reverse": {
+        "name": "Realizing capability",
+        "description": "Grouped links backlinks for realized_capabilities.",
+        "type": "text/html",
+    },
+    "context_diagram": {
+        "name": "Context Diagram",
+        "description": "Context Diagram",
+        "type": "text/html",
+    },
+    "tree_view": {
+        "name": "Tree View Diagram",
+        "description": "Tree View Diagram",
+        "type": "text/html",
+    },
 }
 
 
@@ -297,8 +337,8 @@ def generate_custom_field_xml_files(xml_file: pathlib.Path):
             field_items = [
                 E.field(
                     id=id,
-                    type=field["type"],
                     name=field["name"],
+                    type=field["type"],
                     description=field["description"],
                 )
                 for id, field in FIELDS.items()

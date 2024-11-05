@@ -204,4 +204,14 @@ SPDX-License-Identifier: Apache-2.0 -->
         <rule from="_C2P_logicalFunction" to="_C2P_systemFunction" />
         <rule from="_C2P_systemFunction" to="_C2P_operationalActivity" />
     </option>
+    <option description="Capability involves FunctionalChains" id="_C2P_involved_chains"
+        name="C2P-involved_chains" oppositeName="_C2P-_involved_chains">
+        <rule from="_C2P_operationalCapability, _C2P_systemCapability, _C2P_capabilityRealization" to="_C2P_functionalChain" />
+    </option>
+    <option description="Capability involves Components" id="_C2P_involved_components"
+        name="C2P-involved_components" oppositeName="_C2P-_involved_components">
+        <rule from="_C2P_operationalCapability" to="_C2P_entity" />
+        <rule from="_C2P_systemCapability" to="_C2P_systemComponent, _C2P_systemActor" />
+        <rule from="_C2P_capabilityRealization" to="_C2P_logicalComponent, _C2P_logicalActor, _C2P_physicalActor, _C2P_physicalComponent, _C2P_physicalComponentNode, _C2P_physicalComponentBehavior" />
+    </option>
 </enumeration>
