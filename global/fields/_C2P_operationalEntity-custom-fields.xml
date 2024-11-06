@@ -62,6 +62,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="realized_components_reverse" name="Realizing components" type="text/html" description="Grouped links backlinks for realized_components."/>
   <field id="realized_capabilities" name="Realized Capabilities" type="text/html" description="Realized capabilities of a Capability."/>
   <field id="realized_capabilities_reverse" name="Realizing capability" type="text/html" description="Grouped links backlinks for realized_capabilities."/>
+  <field id="related_functions" name="Related Functions" type="text/html" description="Related functions of a Scenario."/>
+  <field id="related_functions_reverse" name="Related function in" type="text/html" description="Grouped links backlinks for related_functions."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
   <field id="tree_view" name="Tree View Diagram" type="text/html" description="Tree View Diagram"/>
 </fields>

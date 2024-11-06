@@ -312,6 +312,16 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for realized_capabilities.",
         "type": "text/html",
     },
+    "related_functions": {
+        "name": "Related Functions",
+        "description": "Related functions of a Scenario.",
+        "type": "text/html",
+    },
+    "related_functions_reverse": {
+        "name": "Related function in",
+        "description": "Grouped links backlinks for related_functions.",
+        "type": "text/html",
+    },
     "context_diagram": {
         "name": "Context Diagram",
         "description": "Context Diagram",
