@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rich-page>
+    <field id="author">4877</field>
+    <field id="created">2024-11-08 12:55:44.157 +0100</field>
+    <field id="homePageContent" text-type="text/html"><![CDATA[<div class="polarion-rp-column" style="width: 100%;">
+  <h1 id="polarion_hardcoded_0">Referenced Work Items</h1>
+  <p id="polarion_hardcoded_1">This Page has no content yet</p>
+</div>
+<div class="polarion-rp-row-separator" page_min_width="1000"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <div id="polarion_client5" class="polarion-rp-widget-part" data-widget="com.polarion.pageParametersForm">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="title"></sub>
+      <sub id="content">
+        <sub>workItemType</sub>
+        <sub>document</sub>
+      </sub>
+      <sub id="width">500</sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<div class="polarion-rp-column" style="width: 100%;">
+  <div id="polarion_client8" class="polarion-rp-widget-part" data-widget="com.polarion.scriptBlock">
+    <span class="polarion-rp-widget-parameters">
+      <sub id="script">
+        <sub id="script" style="white-space:pre;">#set($projectId = $page.fields().project().projectId())
+
+#set($query = &quot;project.id: $projectId AND type: $pageParameters.workItemType.toLucene()&quot;)
+#if($pageParameters.document.values().size() &gt; 0)
+    #set($docQuery = $pageParameters.document.toLucene().replaceAll(&quot; / &quot;,&quot;/&quot;))
+    #set($query = &quot;${query} AND document.id: ${docQuery}&quot;)
+#end
+#set($workItems = $transaction.workItems().search().query($query))
+
+$query &lt;br&gt;&lt;br&gt;
+
+&lt;table class=&quot;polarion-rpw-table-content&quot;&gt;
+    &lt;tbody&gt;
+        &lt;tr class=&quot;polarion-rpw-table-header-row&quot;&gt;
+            &lt;th&gt;Work Item&lt;/th&gt;
+            &lt;th&gt;Parent Document&lt;/th&gt;
+            &lt;th&gt;Referenced Documents&lt;/th&gt;
+        &lt;/tr&gt;
+
+#foreach($wi in $workItems)
+    #set($wiOldApi = $wi.getOldApi())
+    #set($references = $wiOldApi.getExternalLinkingModules())
+    #if($references.size() &gt; 1)
+        #set($rowspan = &quot;rowspan=${references.size()}&quot;)
+    #else
+        #set($rowspan = &quot;&quot;)
+    #end
+        &lt;tr class=&quot;polarion-rpw-table-content-row&quot;&gt;
+            &lt;td $rowspan&gt;$wi.render().withTitle().withLinks()&lt;/td&gt;
+            &lt;td $rowspan&gt;$wi.fields().module().render().withLinks()&lt;/td&gt;
+    #if($references.size() == 0)
+            &lt;td&gt;&lt;/td&gt;
+    #end 
+            
+    #foreach($ref in $references)
+        #if($velocityCount == 1)
+            &lt;td&gt;$transaction.objects().getForOldApiObject($ref).render().withLinks()&lt;/td&gt;
+        #else
+            &lt;tr class=&quot;polarion-rpw-table-content-row&quot;&gt;&lt;td&gt;$transaction.objects().getForOldApiObject($ref).render().withLinks()&lt;/td&gt;&lt;/tr&gt;
+        #end
+    #end   
+        &lt;/tr&gt;
+#end
+    &lt;/tbody&gt;
+&lt;/table&gt;</sub>
+      </sub>
+    </span>
+  </div>
+</div>
+<div class="polarion-rp-row-separator"></div>
+<span id="polarion-rp-parameters">
+  <sub id="document" data-label="Document" data-type="Enumeration">
+    <sub id="enumId">@document</sub>
+    <sub id="allowNoValue">true</sub>
+    <sub id="allowMultipleValues">false</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+  <sub id="workItemType" data-label="Work Item Type" data-type="Enumeration">
+    <sub id="values">
+      <sub>capabilityRealization</sub>
+    </sub>
+    <sub id="enumId">workitem-type</sub>
+    <sub id="allowNoValue">false</sub>
+    <sub id="allowMultipleValues">false</sub>
+    <sub id="loadForAllTypes">true</sub>
+  </sub>
+</span>]]></field>
+    <field id="title">Referenced Work Items</field>
+</rich-page>
