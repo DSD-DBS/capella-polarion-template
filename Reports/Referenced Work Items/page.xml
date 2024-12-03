@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
 <rich-page>
     <field id="author">4877</field>
     <field id="created">2024-11-08 12:55:44.157 +0100</field>
@@ -56,15 +58,15 @@ $query &lt;br&gt;&lt;br&gt;
             &lt;td $rowspan&gt;$wi.fields().module().render().withLinks()&lt;/td&gt;
     #if($references.size() == 0)
             &lt;td&gt;&lt;/td&gt;
-    #end 
-            
+    #end
+
     #foreach($ref in $references)
         #if($velocityCount == 1)
             &lt;td&gt;$transaction.objects().getForOldApiObject($ref).render().withLinks()&lt;/td&gt;
         #else
             &lt;tr class=&quot;polarion-rpw-table-content-row&quot;&gt;&lt;td&gt;$transaction.objects().getForOldApiObject($ref).render().withLinks()&lt;/td&gt;&lt;/tr&gt;
         #end
-    #end   
+    #end
         &lt;/tr&gt;
 #end
     &lt;/tbody&gt;

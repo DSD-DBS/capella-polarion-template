@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
 <rich-page>
     <field id="author">4877</field>
     <field id="created">2024-11-08 12:18:43.659 +0100</field>
