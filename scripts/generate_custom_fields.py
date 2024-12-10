@@ -22,6 +22,11 @@ FIELDS: dict[str, t.Any] = {
         "for the SET Toolchain.",
         "type": "string",
     },
+    "layer": {
+        "name": "Layer",
+        "description": "The layer of the work item.",
+        "type": "string",
+    },
     "assumption": {
         "name": "Assumption",
         "description": "Requirement text from a Requirement of type Assumption.",
@@ -87,44 +92,14 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links for allocated funtions.",
         "type": "text/html",
     },
-    "allocated_functional_exchanges": {
-        "name": "Allocated functional exchanges",
-        "description": "Grouped links for allocated functional exchanges.",
-        "type": "text/html",
-    },
-    "exchange_items": {
-        "name": "Exchange items",
-        "description": "Grouped links for exchange items.",
-        "type": "text/html",
-    },
-    "involved_activities": {
-        "name": "Involved activities",
-        "description": "Grouped links for involved activities.",
-        "type": "text/html",
-    },
-    "involved_entities": {
-        "name": "Involved entities",
-        "description": "Grouped links for involved entities.",
-        "type": "text/html",
-    },
-    "diagram_elements": {
-        "name": "Diagram elements",
-        "description": "Grouped links for diagram elements.",
-        "type": "text/html",
-    },
-    "state_machines": {
-        "name": "State machines",
-        "description": "Grouped links for state machines.",
-        "type": "text/html",
-    },
-    "parent": {
-        "name": "Parent",
-        "description": "Grouped links for parent.",
-        "type": "text/html",
-    },
     "allocated_functions_reverse": {
         "name": "Allocated as a function by",
         "description": "Grouped links backlinks for allocated functions.",
+        "type": "text/html",
+    },
+    "allocated_functional_exchanges": {
+        "name": "Allocated functional exchanges",
+        "description": "Grouped links for allocated functional exchanges.",
         "type": "text/html",
     },
     "allocated_functional_exchanges_reverse": {
@@ -132,9 +107,19 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for allocated functional exchanges.",
         "type": "text/html",
     },
+    "exchange_items": {
+        "name": "Exchange items",
+        "description": "Grouped links for exchange items.",
+        "type": "text/html",
+    },
     "exchange_items_reverse": {
         "name": "Exchange item in",
         "description": "Grouped links backlinks for exchange items.",
+        "type": "text/html",
+    },
+    "involved_activities": {
+        "name": "Involved activities",
+        "description": "Grouped links for involved activities.",
         "type": "text/html",
     },
     "involved_activities_reverse": {
@@ -142,9 +127,19 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for involved activities.",
         "type": "text/html",
     },
+    "involved_entities": {
+        "name": "Involved entities",
+        "description": "Grouped links for involved entities.",
+        "type": "text/html",
+    },
     "involved_entities_reverse": {
         "name": "Involved by",
         "description": "Grouped links backlinks for involved entities.",
+        "type": "text/html",
+    },
+    "diagram_elements": {
+        "name": "Diagram elements",
+        "description": "Grouped links for diagram elements.",
         "type": "text/html",
     },
     "diagram_elements_reverse": {
@@ -152,9 +147,19 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for diagram elements.",
         "type": "text/html",
     },
+    "state_machines": {
+        "name": "State machines",
+        "description": "Grouped links for state machines.",
+        "type": "text/html",
+    },
     "state_machines_reverse": {
         "name": "State machine in",
         "description": "Grouped links backlinks for state machines.",
+        "type": "text/html",
+    },
+    "parent": {
+        "name": "Parent",
+        "description": "Grouped links for parent.",
         "type": "text/html",
     },
     "parent_reverse": {
@@ -167,39 +172,14 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links for constraints.",
         "type": "text/html",
     },
-    "output_exchanges": {
-        "name": "Output exchanges",
-        "description": "Grouped links for output functional exchanges.",
-        "type": "text/html",
-    },
-    "input_exchanges": {
-        "name": "Input exchanges",
-        "description": "Grouped links for input functional exchanges.",
-        "type": "text/html",
-    },
-    "activities": {
-        "name": "Activities",
-        "description": "Grouped links for activities.",
-        "type": "text/html",
-    },
-    "outputs": {
-        "name": "Outputs",
-        "description": "Grouped links for outputs.",
-        "type": "text/html",
-    },
-    "inputs": {
-        "name": "Inputs",
-        "description": "Grouped links for inputs.",
-        "type": "text/html",
-    },
-    "description_reference": {
-        "name": "Description references",
-        "description": "Grouped links for description references.",
-        "type": "text/html",
-    },
     "constraints_reverse": {
         "name": "Constraints",
         "description": "Grouped links backlinks for constraints.",
+        "type": "text/html",
+    },
+    "output_exchanges": {
+        "name": "Output exchanges",
+        "description": "Grouped links for output functional exchanges.",
         "type": "text/html",
     },
     "output_exchanges_reverse": {
@@ -207,9 +187,19 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for output functional exchanges.",
         "type": "text/html",
     },
+    "input_exchanges": {
+        "name": "Input exchanges",
+        "description": "Grouped links for input functional exchanges.",
+        "type": "text/html",
+    },
     "input_exchanges_reverse": {
         "name": "Input exchange in",
         "description": "Grouped links backlinks for input functional exchanges.",
+        "type": "text/html",
+    },
+    "activities": {
+        "name": "Activities",
+        "description": "Grouped links for activities.",
         "type": "text/html",
     },
     "activities_reverse": {
@@ -217,14 +207,29 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for activities.",
         "type": "text/html",
     },
+    "outputs": {
+        "name": "Outputs",
+        "description": "Grouped links for outputs.",
+        "type": "text/html",
+    },
     "outputs_reverse": {
         "name": "Output in",
         "description": "Grouped links backlinks for outputs.",
         "type": "text/html",
     },
+    "inputs": {
+        "name": "Inputs",
+        "description": "Grouped links for inputs.",
+        "type": "text/html",
+    },
     "inputs_reverse": {
         "name": "Input in",
         "description": "Grouped links backlinks for inputs.",
+        "type": "text/html",
+    },
+    "description_reference": {
+        "name": "Description references",
+        "description": "Grouped links for description references.",
         "type": "text/html",
     },
     "description_reference_reverse": {
@@ -322,6 +327,46 @@ FIELDS: dict[str, t.Any] = {
         "description": "Grouped links backlinks for related_functions.",
         "type": "text/html",
     },
+    "includes": {
+        "name": "Includes",
+        "description": "Included Capabilities.",
+        "type": "text/html",
+    },
+    "includes_reverse": {
+        "name": "Included in",
+        "description": "Grouped links backlinks for includes.",
+        "type": "text/html",
+    },
+    "extends": {
+        "name": "Extends",
+        "description": "Extended Capabilities.",
+        "type": "text/html",
+    },
+    "extends_reverse": {
+        "name": "Extended in",
+        "description": "Grouped links backlinks for extends.",
+        "type": "text/html",
+    },
+    "generalizes": {
+        "name": "Generalizes",
+        "description": "Generalized Capabilities.",
+        "type": "text/html",
+    },
+    "generalizes_reverse": {
+        "name": "Generalized in",
+        "description": "Grouped links backlinks for generalizes.",
+        "type": "text/html",
+    },
+    "physical_links": {
+        "name": "Physical Links",
+        "description": "Physical links for connecting Physical Component Nodes.",
+        "type": "text/html",
+    },
+    "physical_links_reverse": {
+        "name": "Physical link in",
+        "description": "Grouped links backlinks for physical links.",
+        "type": "text/html",
+    },
     "context_diagram": {
         "name": "Context Diagram",
         "description": "Context Diagram",
@@ -330,6 +375,16 @@ FIELDS: dict[str, t.Any] = {
     "tree_view": {
         "name": "Tree View Diagram",
         "description": "Tree View Diagram",
+        "type": "text/html",
+    },
+    "realization_view": {
+        "name": "Realization View Diagram",
+        "description": "Realization View Diagram",
+        "type": "text/html",
+    },
+    "cable_tree": {
+        "name": "Cable Tree Diagram",
+        "description": "Cable Tree Diagram",
         "type": "text/html",
     },
 }
