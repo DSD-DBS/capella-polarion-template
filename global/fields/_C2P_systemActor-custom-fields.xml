@@ -4,11 +4,11 @@ SPDX-License-Identifier: Apache-2.0 -->
 <fields>
   <field id="uuid_capella" name="UUID (Capella)" type="string" description="Corresponding Capella ID"/>
   <field id="checksum" name="Checksum" type="string" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain."/>
+  <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
+  <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="layer" name="Layer" type="string" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="availability" name="Availability" type="text/html" description="Requirement text from a Requirement of type Availability."/>
-  <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
-  <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
   <field id="computation" name="Computation" type="text/html" description="Requirement text from a Requirement of type Computation."/>
   <field id="legal" name="Legal" type="text/html" description="Requirement text from a Requirement of type Legal."/>
   <field id="performance" name="Performance" type="text/html" description="Requirement text from a Requirement of type Performance."/>
@@ -17,6 +17,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="safety" name="Safety" type="text/html" description="Requirement text from a Requirement of type Safety."/>
   <field id="security" name="Security" type="text/html" description="Requirement text from a Requirement of type Security."/>
   <field id="standards" name="Standards" type="text/html" description="Requirement text from a Requirement of type Standards."/>
+  <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
+  <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
   <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
   <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
   <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
@@ -31,8 +33,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
   <field id="state_machines_reverse" name="State machine in" type="text/html" description="Grouped links backlinks for state machines."/>
-  <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
-  <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
