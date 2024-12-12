@@ -19,6 +19,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="standards" name="Standards" type="text/html" description="Requirement text from a Requirement of type Standards."/>
   <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
   <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
+  <field id="nature" name="Nature" type="string" description="The nature of a PhysicalComponent."/>
+  <field id="kind" name="Kind" type="string" description="The kinds for various types."/>
   <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
   <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
   <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
@@ -71,6 +73,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="extends_reverse" name="Extended in" type="text/html" description="Grouped links backlinks for extends."/>
   <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
   <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
+  <field id="interfaces" name="Interfaces" type="text/html" description="Interfaces between Components and Actors."/>
+  <field id="interfaces_reverse" name="Interface in" type="text/html" description="Grouped links backlinks for interfaces."/>
   <field id="physical_links" name="Physical Links" type="text/html" description="Physical links for connecting Physical Component Nodes."/>
   <field id="physical_links_reverse" name="Physical link in" type="text/html" description="Grouped links backlinks for physical links."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>

@@ -102,6 +102,16 @@ FIELDS: dict[str, t.Any] = {
             "description": "Post Condition.",
             "type": "text/html",
         },
+        "nature": {
+            "name": "Nature",
+            "description": "The nature of a PhysicalComponent.",
+            "type": "string",
+        },
+        "kind": {
+            "name": "Kind",
+            "description": "The kinds for various types.",
+            "type": "string",
+        },
         "allocated_functions": {
             "name": "Allocated functions",
             "description": "Grouped links for allocated funtions.",
@@ -360,6 +370,16 @@ FIELDS: dict[str, t.Any] = {
         "generalizes_reverse": {
             "name": "Generalized in",
             "description": "Grouped links backlinks for generalizes.",
+            "type": "text/html",
+        },
+        "interfaces": {
+            "name": "Interfaces",
+            "description": "Interfaces between Components and Actors.",
+            "type": "text/html",
+        },
+        "interfaces_reverse": {
+            "name": "Interface in",
+            "description": "Grouped links backlinks for interfaces.",
             "type": "text/html",
         },
         "physical_links": {
