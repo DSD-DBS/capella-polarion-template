@@ -36,7 +36,7 @@ FIELDS: dict[str, t.Any] = {
         "layer": {
             "name": "Layer",
             "description": "The layer of the work item.",
-            "type": "string",
+            "type": "enum:_C2P_layer",
         },
     },
     "Requirement Fields": {

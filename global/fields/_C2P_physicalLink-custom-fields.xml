@@ -6,7 +6,7 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="checksum" name="Checksum" type="string" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain."/>
   <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
   <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
-  <field id="layer" name="Layer" type="string" description="The layer of the work item."/>
+  <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="availability" name="Availability" type="text/html" description="Requirement text from a Requirement of type Availability."/>
   <field id="computation" name="Computation" type="text/html" description="Requirement text from a Requirement of type Computation."/>
