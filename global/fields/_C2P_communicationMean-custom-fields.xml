@@ -4,10 +4,11 @@ SPDX-License-Identifier: Apache-2.0 -->
 <fields>
   <field id="uuid_capella" name="UUID (Capella)" type="string" description="Corresponding Capella ID"/>
   <field id="checksum" name="Checksum" type="string" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain."/>
+  <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
+  <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
+  <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="availability" name="Availability" type="text/html" description="Requirement text from a Requirement of type Availability."/>
-  <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
-  <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
   <field id="computation" name="Computation" type="text/html" description="Requirement text from a Requirement of type Computation."/>
   <field id="legal" name="Legal" type="text/html" description="Requirement text from a Requirement of type Legal."/>
   <field id="performance" name="Performance" type="text/html" description="Requirement text from a Requirement of type Performance."/>
@@ -16,35 +17,37 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="safety" name="Safety" type="text/html" description="Requirement text from a Requirement of type Safety."/>
   <field id="security" name="Security" type="text/html" description="Requirement text from a Requirement of type Security."/>
   <field id="standards" name="Standards" type="text/html" description="Requirement text from a Requirement of type Standards."/>
+  <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
+  <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
+  <field id="nature" name="Nature" type="string" description="The nature of a PhysicalComponent."/>
+  <field id="kind" name="Kind" type="string" description="The kinds for various types."/>
   <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
-  <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
-  <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
-  <field id="involved_activities" name="Involved activities" type="text/html" description="Grouped links for involved activities."/>
-  <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
-  <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
-  <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
   <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
+  <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
   <field id="allocated_functional_exchanges_reverse" name="Allocated as a functional Exchange by" type="text/html" description="Grouped links backlinks for allocated functional exchanges."/>
+  <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
   <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
+  <field id="involved_activities" name="Involved activities" type="text/html" description="Grouped links for involved activities."/>
   <field id="involved_activities_reverse" name="Involved as an activity by" type="text/html" description="Grouped links backlinks for involved activities."/>
+  <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities."/>
   <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
+  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
+  <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
   <field id="state_machines_reverse" name="State machine in" type="text/html" description="Grouped links backlinks for state machines."/>
-  <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
-  <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
-  <field id="input_exchanges" name="Input exchanges" type="text/html" description="Grouped links for input functional exchanges."/>
-  <field id="activities" name="Activities" type="text/html" description="Grouped links for activities."/>
-  <field id="outputs" name="Outputs" type="text/html" description="Grouped links for outputs."/>
-  <field id="inputs" name="Inputs" type="text/html" description="Grouped links for inputs."/>
-  <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
+  <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
   <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
+  <field id="input_exchanges" name="Input exchanges" type="text/html" description="Grouped links for input functional exchanges."/>
   <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
+  <field id="activities" name="Activities" type="text/html" description="Grouped links for activities."/>
   <field id="activities_reverse" name="Activity in" type="text/html" description="Grouped links backlinks for activities."/>
+  <field id="outputs" name="Outputs" type="text/html" description="Grouped links for outputs."/>
   <field id="outputs_reverse" name="Output in" type="text/html" description="Grouped links backlinks for outputs."/>
+  <field id="inputs" name="Inputs" type="text/html" description="Grouped links for inputs."/>
   <field id="inputs_reverse" name="Input in" type="text/html" description="Grouped links backlinks for inputs."/>
+  <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
   <field id="scenarios" name="Scenarios" type="text/html" description="Grouped links for scenarios."/>
   <field id="scenarios_reverse" name="is Scenario in" type="text/html" description="Grouped links backlinks for scenarios."/>
@@ -62,6 +65,20 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="realized_components_reverse" name="Realizing components" type="text/html" description="Grouped links backlinks for realized_components."/>
   <field id="realized_capabilities" name="Realized Capabilities" type="text/html" description="Realized capabilities of a Capability."/>
   <field id="realized_capabilities_reverse" name="Realizing capability" type="text/html" description="Grouped links backlinks for realized_capabilities."/>
+  <field id="related_functions" name="Related Functions" type="text/html" description="Related functions of a Scenario."/>
+  <field id="related_functions_reverse" name="Related function in" type="text/html" description="Grouped links backlinks for related_functions."/>
+  <field id="includes" name="Includes" type="text/html" description="Included Capabilities."/>
+  <field id="includes_reverse" name="Included in" type="text/html" description="Grouped links backlinks for includes."/>
+  <field id="extends" name="Extends" type="text/html" description="Extended Capabilities."/>
+  <field id="extends_reverse" name="Extended in" type="text/html" description="Grouped links backlinks for extends."/>
+  <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
+  <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
+  <field id="interfaces" name="Interfaces" type="text/html" description="Interfaces between Components and Actors."/>
+  <field id="interfaces_reverse" name="Interface in" type="text/html" description="Grouped links backlinks for interfaces."/>
+  <field id="physical_links" name="Physical Links" type="text/html" description="Physical links for connecting Physical Component Nodes."/>
+  <field id="physical_links_reverse" name="Physical link in" type="text/html" description="Grouped links backlinks for physical links."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
   <field id="tree_view" name="Tree View Diagram" type="text/html" description="Tree View Diagram"/>
+  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
+  <field id="cable_tree" name="Cable Tree Diagram" type="text/html" description="Cable Tree Diagram"/>
 </fields>

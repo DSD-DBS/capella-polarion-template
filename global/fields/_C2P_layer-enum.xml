@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<enumeration>
+  <option id="common" name="Common" sortOrder="0"></option>
+  <option id="oa" name="Operational Architecture" sortOrder="1"></option>
+  <option id="sa" name="System Analysis" sortOrder="2"></option>
+  <option id="la" name="Logical Architecture" sortOrder="3"></option>
+  <option id="pa" name="Physical Architecture" sortOrder="4"></option>
+</enumeration>
