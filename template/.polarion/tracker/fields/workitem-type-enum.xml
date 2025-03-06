@@ -40,4 +40,5 @@ SPDX-License-Identifier: Apache-2.0 -->
   <option id="state" name="State" description="The State of an element characterizes the element behavior in given environmental conditions. A State is activated mainly by external conditions, or by operators. It may be unexpected and even suffered." iconURL="/polarion/icons/project/%project-id%/Capella_State.gif" sortOrder="36"/>
   <option id="dataPkg" name="DataPkg" description="A Package storing class data." iconURL="/polarion/icons/project/%project-id%/Capella_DataPkg.gif" sortOrder="37"/>
   <option id="property" name="Property" description="A property of a class." iconURL="/polarion/icons/project/%project-id%/Capella_Property.gif" sortOrder="38"/>
+  <option id="text" name="Text" description="A text in a LiveDoc." iconURL="/polarion/icons/project/%project-id%/C2P_text.gif" sortOrder="39"/>
 </enumeration>
