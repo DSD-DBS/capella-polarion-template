@@ -12,30 +12,10 @@ SPDX-License-Identifier: Apache-2.0 -->
   </horizontal>
   <field id="description"/>
   <panel description="Generic Capella Fields">
-    <field id="uuid_capella" readOnly="true"/>
-    <field id="checksum" readOnly="true"/>
-    <field id="parent" readOnly="true"/>
-    <field id="parent_reverse" readOnly="true"/>
-    <field id="layer" readOnly="true"/>
+    <field id="__C2P__id" readOnly="true"/>
   </panel>
   <panel description="Custom Capella Fields">
     <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-assumption,-availability,-computation,-legal,-performance,-rationale,-reliability,-safety,-security,-standards,-context_diagram,-tree_view,-realization_view,-cable_tree" readOnly="true"/>
-    <field id="context_diagram" readOnly="true"/>
-    <field id="tree_view" readOnly="true"/>
-    <field id="realization_view" readOnly="true"/>
-    <field id="cable_tree" readOnly="true"/>
-  </panel>
-  <panel description="Requirement Fields">
-    <field id="assumption" readOnly="true"/>
-    <field id="availability" readOnly="true"/>
-    <field id="computation" readOnly="true"/>
-    <field id="legal" readOnly="true"/>
-    <field id="performance" readOnly="true"/>
-    <field id="rationale" readOnly="true"/>
-    <field id="reliability" readOnly="true"/>
-    <field id="safety" readOnly="true"/>
-    <field id="security" readOnly="true"/>
-    <field id="standards" readOnly="true"/>
   </panel>
   <field id="comments"/>
   <field id="linkedWorkItems"/>
