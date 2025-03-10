@@ -41,5 +41,4 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="_C2P_mode" name="Mode" description="The Mode of an element defines the kind of element exploitation expected in given use conditions. A Mode is activated by operators. It is usually the result of a design decision and is an expected behavior feature of the element." iconURL="/polarion/icons/group/Capella_Mode.gif" sortOrder="37" />
     <option id="_C2P_state" name="State" description="The State of an element characterizes the element behavior in given environmental conditions. A State is activated mainly by external conditions, or by operators. It may be unexpected and even suffered." iconURL="/polarion/icons/group/Capella_State.gif" sortOrder="38" />
     <option id="_C2P_dataPkg" name="DataPkg" description="A Package storing class data." iconURL="/polarion/icons/group/Capella_DataPkg.gif" sortOrder="39" />
-    <option id="_C2P_text" name="Text" description="A text in a LiveDoc." iconURL="/polarion/icons/group/C2P_text.gif" sortOrder="40"/>
 </enumeration>
