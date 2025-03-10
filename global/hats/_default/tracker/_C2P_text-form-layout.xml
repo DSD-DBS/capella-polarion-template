@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<formLayout xmlns="http://polarion.com/schema/WorkItems/FormLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://polarion.com/schema/WorkItems/FormLayout">
+  <horizontal>
+    <vertical>
+      <section>
+        <field id="type"/>
+        <field id="project"/>
+      </section>
+    </vertical>
+  </horizontal>
+  <field id="description"/>
+  <panel description="Generic Capella Fields">
+    <field id="__C2P__id" readOnly="true"/>
+  </panel>
+  <panel description="Custom Capella Fields">
+    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-assumption,-availability,-computation,-legal,-performance,-rationale,-reliability,-safety,-security,-standards,-context_diagram,-tree_view,-realization_view,-cable_tree" readOnly="true"/>
+  </panel>
+  <field id="comments"/>
+  <field id="linkedWorkItems"/>
+  <field id="hyperlinks"/>
+</formLayout>

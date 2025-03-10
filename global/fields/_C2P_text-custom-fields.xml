@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<fields>
+  <field id="__C2P__id" name="UUID (Capella)" type="string" description="Corresponding Capella ID"/>
+</fields>

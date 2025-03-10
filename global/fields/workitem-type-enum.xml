@@ -22,4 +22,5 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="_C2P_physicalPath" name="C2P-Physical Path" description="A Physical Path is an ordered set of Physical Links conveying a Component Exchange." iconURL="/polarion/icons/group/Capella_PhysicalPath.gif" sortOrder="18" />
     <option id="_C2P_physicalLink" name="C2P-Physical Link" description="Physical Links are the communication/transportation means linking Node Physical Components. They carry the Component Exchanges existing between the Behavior Physical Components." iconURL="/polarion/icons/group/Capella_PhysicalLink.gif" sortOrder="19" />
     <option id="_C2P_state" name="C2P-State" description="The State of an element characterizes the element behavior in given environmental conditions. A State is activated mainly by external conditions, or by operators. It may be unexpected and even suffered." iconURL="/polarion/icons/group/Capella_State.gif" sortOrder="20" />
+    <option id="_C2P_text" name="Text" description="A text in a LiveDoc." iconURL="/polarion/icons/group/C2P_text.gif" sortOrder="21"/>
 </enumeration>
