@@ -29,8 +29,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="realized" name="Realized functions" type="text/html" description="Realized model element."/>
-  <field id="realized_reverse" name="Realizing functions" type="text/html" description="Grouped links backlinks for realized."/>
+  <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
+  <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
   <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
   <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
   <field id="interfaces" name="Interfaces" type="text/html" description="Interfaces between Components and Actors."/>
