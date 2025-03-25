@@ -11,7 +11,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="preCondition" name="Pre Condition" type="text/html" description="Pre Condition."/>
   <field id="postCondition" name="Post Condition" type="text/html" description="Post Condition."/>
-  <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
   <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
   <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
   <field id="involved_activities" name="Involved activities" type="text/html" description="Grouped links for involved activities."/>
@@ -32,22 +31,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="involved_links_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involve"/>
   <field id="involved_components" name="Involved Components" type="text/html" description="Involved components on a Capability."/>
   <field id="involved_components_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involved_components."/>
-  <field id="involved_chains" name="Involved Chains" type="text/html" description="Involved chains on a Capability or FunctionalChain."/>
-  <field id="involved_chains_reverse" name="Involved chain in" type="text/html" description="Grouped links backlinks for involved_chains."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="includes" name="Includes" type="text/html" description="Included Capabilities."/>
-  <field id="includes_reverse" name="Included in" type="text/html" description="Grouped links backlinks for includes."/>
-  <field id="extends" name="Extends" type="text/html" description="Extended Capabilities."/>
-  <field id="extends_reverse" name="Extended in" type="text/html" description="Grouped links backlinks for extends."/>
-  <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
-  <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
-  <field id="interfaces" name="Interfaces" type="text/html" description="Interfaces between Components and Actors."/>
-  <field id="interfaces_reverse" name="Interface in" type="text/html" description="Grouped links backlinks for interfaces."/>
-  <field id="physical_links" name="Physical Links" type="text/html" description="Physical links for connecting Physical Component Nodes."/>
-  <field id="physical_links_reverse" name="Physical link in" type="text/html" description="Grouped links backlinks for physical links."/>
-  <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
-  <field id="tree_view" name="Tree View Diagram" type="text/html" description="Tree View Diagram"/>
-  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
-  <field id="cable_tree" name="Cable Tree Diagram" type="text/html" description="Cable Tree Diagram"/>
 </fields>
