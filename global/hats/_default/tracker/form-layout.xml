@@ -19,7 +19,7 @@ SPDX-License-Identifier: Apache-2.0 -->
         <field id="parent_reverse" readOnly="true" />
     </panel>
     <panel description="Custom Capella Fields">
-        <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId,-uuid_capella,-checksum,-parent,-parent_reverse,-assumption,-availability,-computation,-legal,-performance,-rationale,-reliability,-safety,-security,-standards,-context_diagram,-tree_view" readOnly="true" />
+        <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-capellaId,-uuid_capella,-checksum,-parent,-parent_reverse,-rationale,-assumption,-context_diagram,-tree_view" readOnly="true" />
         <field id="context_diagram" readOnly="true" />
         <field id="tree_view" readOnly="true" />
     </panel>

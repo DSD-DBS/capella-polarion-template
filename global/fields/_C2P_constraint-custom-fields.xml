@@ -7,16 +7,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="parent" name="Parent" type="text/html" description="Grouped links for parent."/>
   <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="layer" name="Layer" type="string" description="The layer of the work item."/>
-  <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
-  <field id="availability" name="Availability" type="text/html" description="Requirement text from a Requirement of type Availability."/>
-  <field id="computation" name="Computation" type="text/html" description="Requirement text from a Requirement of type Computation."/>
-  <field id="legal" name="Legal" type="text/html" description="Requirement text from a Requirement of type Legal."/>
-  <field id="performance" name="Performance" type="text/html" description="Requirement text from a Requirement of type Performance."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
-  <field id="reliability" name="Reliability" type="text/html" description="Requirement text from a Requirement of type Reliability."/>
-  <field id="safety" name="Safety" type="text/html" description="Requirement text from a Requirement of type Safety."/>
-  <field id="security" name="Security" type="text/html" description="Requirement text from a Requirement of type Security."/>
-  <field id="standards" name="Standards" type="text/html" description="Requirement text from a Requirement of type Standards."/>
+  <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
