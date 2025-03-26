@@ -15,8 +15,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
   <field id="involved_activities" name="Involved activities" type="text/html" description="Grouped links for involved activities."/>
   <field id="involved_activities_reverse" name="Involved as an activity by" type="text/html" description="Grouped links backlinks for involved activities."/>
-  <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities."/>
-  <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
   <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
@@ -29,8 +27,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="involved_functions_reverse" name="Involved function in" type="text/html" description="Grouped links backlinks for involved_functions."/>
   <field id="involved_links" name="Involved Links" type="text/html" description="Involved exchanges on a FunctionalChain."/>
   <field id="involved_links_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involve"/>
-  <field id="involved_components" name="Involved Components" type="text/html" description="Involved components on a Capability."/>
-  <field id="involved_components_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involved_components."/>
+  <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities."/>
+  <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
 </fields>

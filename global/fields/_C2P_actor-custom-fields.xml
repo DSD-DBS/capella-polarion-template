@@ -19,8 +19,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="involved_components" name="Involved Components" type="text/html" description="Involved components on a Capability."/>
-  <field id="involved_components_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involved_components."/>
+  <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities on a capability."/>
+  <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
   <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
