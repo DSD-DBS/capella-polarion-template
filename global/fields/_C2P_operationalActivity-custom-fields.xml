@@ -9,10 +9,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="string" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
-  <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
-  <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
-  <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
-  <field id="allocated_functional_exchanges_reverse" name="Allocated as a functional Exchange by" type="text/html" description="Grouped links backlinks for allocated functional exchanges."/>
   <field id="involved_activities" name="Involved activities" type="text/html" description="Grouped links for involved activities."/>
   <field id="involved_activities_reverse" name="Involved as an activity by" type="text/html" description="Grouped links backlinks for involved activities."/>
   <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
