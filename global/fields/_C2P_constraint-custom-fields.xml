@@ -9,14 +9,10 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
-  <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
   <field id="state_machines_reverse" name="State machine in" type="text/html" description="Grouped links backlinks for state machines."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="realized" name="Realized" type="text/html" description="Realized."/>
-  <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
 </fields>

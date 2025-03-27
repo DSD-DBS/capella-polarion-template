@@ -11,6 +11,8 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="properties_reverse" name="The Classes where this property is applied" type="text/html" description="Grouped links for property owner."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
+  <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
+  <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
 </fields>

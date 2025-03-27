@@ -10,12 +10,7 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="properties" name="Properties" type="text/html" description="Grouped links for properties."/>
-  <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
-  <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
-  <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
-  <field id="state_machines_reverse" name="State machine in" type="text/html" description="Grouped links backlinks for state machines."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
@@ -25,5 +20,4 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
   <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
   <field id="tree_view" name="Tree View Diagram" type="text/html" description="Tree View Diagram"/>
-  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
 </fields>

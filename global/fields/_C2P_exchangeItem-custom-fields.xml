@@ -9,22 +9,14 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
-  <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
   <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
-  <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
-  <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
-  <field id="input_exchanges" name="Input exchanges" type="text/html" description="Grouped links for input functional exchanges."/>
-  <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="generalizes" name="Generalizes" type="text/html" description="Generalized Capabilities."/>
-  <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
   <field id="interfaces" name="Interfaces" type="text/html" description="Interfaces between Components and Actors."/>
   <field id="interfaces_reverse" name="Interface in" type="text/html" description="Grouped links backlinks for interfaces."/>
 </fields>

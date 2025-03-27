@@ -8,7 +8,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="parent_reverse" name="Children" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
-  <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>

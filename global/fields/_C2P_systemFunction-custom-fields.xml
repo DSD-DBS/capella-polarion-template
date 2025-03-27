@@ -9,28 +9,18 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
-  <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
-  <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
+  <field id="allocated" name="Allocated" type="text/html" description="Grouped links for allocations."/>
+  <field id="allocated_reverse" name="Allocated to" type="text/html" description="Grouped links backlinks for allocations."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
-  <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
   <field id="input_exchanges" name="Input exchanges" type="text/html" description="Grouped links for input functional exchanges."/>
-  <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
-  <field id="outputs" name="Outputs" type="text/html" description="Grouped links for outputs."/>
-  <field id="outputs_reverse" name="Output in" type="text/html" description="Grouped links backlinks for outputs."/>
-  <field id="inputs" name="Inputs" type="text/html" description="Grouped links for inputs."/>
-  <field id="inputs_reverse" name="Input in" type="text/html" description="Grouped links backlinks for inputs."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="involved_functions" name="Involved Functions" type="text/html" description="Involved functions on a FunctionalChain"/>
   <field id="involved_functions_reverse" name="Involved function in" type="text/html" description="Grouped links backlinks for involved_functions."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="involved_chains" name="Involved Chains" type="text/html" description="Involved chains on a Capability or FunctionalChain."/>
-  <field id="involved_chains_reverse" name="Involved chain in" type="text/html" description="Grouped links backlinks for involved_chains."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
   <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
 </fields>

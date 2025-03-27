@@ -9,21 +9,13 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
-  <field id="allocated_functions" name="Allocated functions" type="text/html" description="Grouped links for allocated funtions."/>
-  <field id="allocated_functions_reverse" name="Allocated as a function by" type="text/html" description="Grouped links backlinks for allocated functions."/>
-  <field id="allocated_functional_exchanges" name="Allocated functional exchanges" type="text/html" description="Grouped links for allocated functional exchanges."/>
-  <field id="allocated_functional_exchanges_reverse" name="Allocated as a functional Exchange by" type="text/html" description="Grouped links backlinks for allocated functional exchanges."/>
   <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
   <field id="exchange_items_reverse" name="Exchange item in" type="text/html" description="Grouped links backlinks for exchange items."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
-  <field id="activities" name="Activities" type="text/html" description="Grouped links for activities."/>
-  <field id="activities_reverse" name="Activity in" type="text/html" description="Grouped links backlinks for activities."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="involved_links" name="Involved Links" type="text/html" description="Involved exchanges on a FunctionalChain."/>
-  <field id="involved_links_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involve"/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
 </fields>

@@ -9,7 +9,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Layer" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="assumption" name="Assumption" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
   <field id="rationale" name="Rationale" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
-  <field id="diagram_elements" name="Diagram elements" type="text/html" description="Grouped links for diagram elements."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="state_machines" name="State machines" type="text/html" description="Grouped links for state machines."/>
   <field id="state_machines_reverse" name="State machine in" type="text/html" description="Grouped links backlinks for state machines."/>
@@ -19,9 +18,4 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="generalizes" name="Generalizes" type="text/html" description="Generalized."/>
-  <field id="generalizes_reverse" name="Generalized in" type="text/html" description="Grouped links backlinks for generalizes."/>
-  <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
-  <field id="tree_view" name="Tree View Diagram" type="text/html" description="Tree View Diagram"/>
-  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
 </fields>
