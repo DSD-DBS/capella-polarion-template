@@ -15,7 +15,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="allocated_reverse" name="Allocated to" type="text/html" description="Grouped links backlinks for allocations."/>
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
-  <field id="constraints_reverse" name="Constraints" type="text/html" description="Grouped links backlinks for constraints."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
   <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
