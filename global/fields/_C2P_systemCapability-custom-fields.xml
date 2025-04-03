@@ -19,7 +19,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="involved_functions" name="Involved Functions" type="text/html" description="Involved functions on a FunctionalChain"/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="involved_functions" type="text/html" name="Involved activities" description="Grouped links for involved activities."/>
   <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities on a capability."/>
   <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
   <field id="includes" name="Includes" type="text/html" description="Included Capabilities."/>
