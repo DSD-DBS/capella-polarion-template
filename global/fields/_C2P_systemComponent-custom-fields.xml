@@ -26,4 +26,5 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="physical_links_reverse" name="Physical link in" type="text/html" description="Grouped links backlinks for physical links."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
   <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
+  <field id="involved_components_reverse" name="Involved in" type="text/html" description="Grouped links backlinks for involved_components."/>
 </fields>

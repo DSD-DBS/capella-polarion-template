@@ -12,16 +12,11 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="diagram_elements_reverse" name="Diagrams" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="output_exchanges" name="Output exchanges" type="text/html" description="Grouped links for output functional exchanges."/>
-  <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
   <field id="input_exchanges" name="Input exchanges" type="text/html" description="Grouped links for input functional exchanges."/>
-  <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
   <field id="allocated_reverse" name="Allocated to" type="text/html" description="Grouped links backlinks for activities."/>
   <field id="description_reference" name="Description references" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="Referenced in description by" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="involved_functions" name="Involved Functions" type="text/html" description="Involved functions on a FunctionalChain"/>
   <field id="involved_functions_reverse" name="Involved function in" type="text/html" description="Grouped links backlinks for involved_functions."/>
-  <field id="involved_links" name="Involved Links" type="text/html" description="Involved exchanges on a FunctionalChain."/>
-  <field id="involved_links_reverse" name="Involved exchange in" type="text/html" description="Grouped links backlinks for involve"/>
   <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
   <field id="context_diagram" name="Context Diagram" type="text/html" description="Context Diagram"/>
