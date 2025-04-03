@@ -21,6 +21,7 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
   <field id="involved_entities" name="Involved entities" type="text/html" description="Grouped links for involved entities on a capability."/>
   <field id="involved_entities_reverse" name="Involved by" type="text/html" description="Grouped links backlinks for involved entities."/>
+  <field id="involved_reference" name="Referenced" type="text/html" description="Involved chains on a Capability or FunctionalChain."/>
   <field id="includes" name="Includes" type="text/html" description="Included Capabilities."/>
   <field id="includes_reverse" name="Included in" type="text/html" description="Grouped links backlinks for includes."/>
   <field id="extends" name="Extends" type="text/html" description="Extended Capabilities."/>
