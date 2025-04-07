@@ -7,8 +7,6 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="parent" name="Elternteil" type="text/html" description="Grouped links for parent."/>
   <field id="parent_reverse" name="Kinder" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="layer" name="Modellierungsebene" type="enum:_C2P_layer" description="The layer of the work item."/>
-  <field id="assumption" name="Annahme" type="text/html" description="Requirement text from a Requirement of type Assumption."/>
-  <field id="rationale" name="Rationalität" type="text/html" description="Requirement text from a Requirement of type Rationale."/>
   <field id="allocated" name="Allokiert" type="text/html" description="Grouped links for allocations."/>
   <field id="allocated_reverse" name="Allokiert von" type="text/html" description="Grouped links backlinks for allocations."/>
   <field id="diagram_elements_reverse" name="sichtbar in Diagramme" type="text/html" description="Grouped links backlinks for diagram elements."/>
