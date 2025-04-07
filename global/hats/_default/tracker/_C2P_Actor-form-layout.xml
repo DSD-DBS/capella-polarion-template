@@ -19,7 +19,8 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field id="layer" readOnly="true"/>
   </panel>
   <panel description="Custom Capella Fields">
-    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption" readOnly="true"/>
+    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption,-context_diagram" readOnly="true"/>
+    <field id="context_diagram" readOnly="true"/>
   </panel>
   <panel description="Justification Fields">
     <field id="rationale" readOnly="false"/>
