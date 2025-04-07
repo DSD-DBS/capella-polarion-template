@@ -21,6 +21,6 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="_C2P_Actor" name="Akteur" description="Beschreibt eine externale Entität, welche mit dem System interagiert." iconURL="/polarion/icons/group/Capella_Actor.gif" sortOrder="16"/>
     <option id="_C2P_Component" name="Komponente" description="Beschreibt ein System oder Teile davon." iconURL="/polarion/icons/group/Capella_System.gif" sortOrder="17"/>
     <option id="_C2P_Function" name="Funktion" description="Beschreibt eine Funktionalität des Systems welche in der Regel eine oder mehrere Operational Activities verfeinert." iconURL="/polarion/icons/group/Capella_SystemFunction.gif" sortOrder="18"/>
-    <option id="_C2P_FunctionalExchange" name="Functionsaustausch" description="Bezeichnet der Informationsaustausch zwischen zwei Funktionen." iconURL="/polarion/icons/group/Capella_FunctionalExchange.gif" sortOrder="19"/>
+    <option id="_C2P_FunctionalExchange" name="Funktionsaustausch" description="Bezeichnet der Informationsaustausch zwischen zwei Funktionen." iconURL="/polarion/icons/group/Capella_FunctionalExchange.gif" sortOrder="19"/>
     <option id="_C2P_ComponentExchange" name="Schnittstelle" description="Repräsentiert die Verbindung zwischen zwei Komponenten, oder Zwischen einer Komponente und einem Akteur." iconURL="/polarion/icons/group/Capella_ComponentExchange.gif" sortOrder="20"/>
 </enumeration>
