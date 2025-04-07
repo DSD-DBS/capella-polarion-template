@@ -17,10 +17,10 @@ SPDX-License-Identifier: Apache-2.0 -->
     <option id="defect" name="Fehler/Problem" description="Ein identifizierter Fehler oder Problem " iconURL="/polarion/icons/default/enums/type_bug.gif" sortOrder="12"/>
     <option id="testcase" name="Test Case" color="#D9B141" description="Ein Testfall" iconURL="/polarion/icons/default/enums/type_purple_testcase.png" sortOrder="13"/>
     <option id="_placeholder" name="------ Capella Sync Work Items ------" description="Trenner" iconURL="/polarion/icons/default/enums/type_purple_testcase.png" sortOrder="14"/>
-    <option id="diagram" name="C2P-Diagram" description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/group/Capella_Diagram.png" sortOrder="15"/>
-    <option id="_C2P_Actor" name="C2P-Akteur" description="Beschreibt eine externale Entität, welche mit dem System interagiert." iconURL="/polarion/icons/group/Capella_Actor.gif" sortOrder="16"/>
-    <option id="_C2P_Component" name="C2P-Komponente" description="Beschreibt ein System oder Teile davon." iconURL="/polarion/icons/group/Capella_System.gif" sortOrder="17"/>
-    <option id="_C2P_Function" name="C2P-Funktion" description="Beschreibt eine Funktionalität des Systems welche in der Regel eine oder mehrere Operational Activities verfeinert." iconURL="/polarion/icons/group/Capella_SystemFunction.gif" sortOrder="18"/>
-    <option id="_C2P_FunctionalExchange" name="C2P-Functionsaustausch" description="Bezeichnet der Informationsaustausch zwischen zwei Funktionen." iconURL="/polarion/icons/group/Capella_FunctionalExchange.gif" sortOrder="19"/>
-    <option id="_C2P_ComponentExchange" name="C2P-Schnittstelle" description="Repräsentiert die Verbindung zwischen zwei Komponenten, oder Zwischen einer Komponente und einem Akteur." iconURL="/polarion/icons/group/Capella_ComponentExchange.gif" sortOrder="20"/>
+    <option id="diagram" name="Diagram" description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/group/Capella_Diagram.png" sortOrder="15"/>
+    <option id="_C2P_Actor" name="Akteur" description="Beschreibt eine externale Entität, welche mit dem System interagiert." iconURL="/polarion/icons/group/Capella_Actor.gif" sortOrder="16"/>
+    <option id="_C2P_Component" name="Komponente" description="Beschreibt ein System oder Teile davon." iconURL="/polarion/icons/group/Capella_System.gif" sortOrder="17"/>
+    <option id="_C2P_Function" name="Funktion" description="Beschreibt eine Funktionalität des Systems welche in der Regel eine oder mehrere Operational Activities verfeinert." iconURL="/polarion/icons/group/Capella_SystemFunction.gif" sortOrder="18"/>
+    <option id="_C2P_FunctionalExchange" name="Functionsaustausch" description="Bezeichnet der Informationsaustausch zwischen zwei Funktionen." iconURL="/polarion/icons/group/Capella_FunctionalExchange.gif" sortOrder="19"/>
+    <option id="_C2P_ComponentExchange" name="Schnittstelle" description="Repräsentiert die Verbindung zwischen zwei Komponenten, oder Zwischen einer Komponente und einem Akteur." iconURL="/polarion/icons/group/Capella_ComponentExchange.gif" sortOrder="20"/>
 </enumeration>
