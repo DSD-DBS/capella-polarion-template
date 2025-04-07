@@ -9,16 +9,9 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Modellierungsebene" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="allocated" name="Allokiert" type="text/html" description="Grouped links for allocated functional exchanges."/>
   <field id="allocated_reverse" name="Allokiert von" type="text/html" description="Grouped links backlinks for allocated functional exchanges."/>
-  <field id="exchange_items" name="Exchange items" type="text/html" description="Grouped links for exchange items."/>
   <field id="diagram_elements_reverse" name="Diagramme" type="text/html" description="Grouped links backlinks for diagram elements."/>
-  <field id="constraints" name="Constraints" type="text/html" description="Grouped links for constraints."/>
   <field id="description_reference" name="Beschreibungsverweise" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="referenziert in Beschreibung von" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="realized" name="Realized" type="text/html" description="Realized model element."/>
-  <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
-  <field id="physical_links" name="Physical Links" type="text/html" description="Physical links for connecting Physical Component Nodes."/>
-  <field id="physical_links_reverse" name="Physical link in" type="text/html" description="Grouped links backlinks for physical links."/>
-  <field id="interfaces_reverse" name="Interface in" type="text/html" description="Grouped links backlinks for interfaces."/>
+  <field id="interfaces_reverse" name="Schnittstelle in" type="text/html" description="Grouped links backlinks for interfaces."/>
   <field id="context_diagram" name="Kontextdiagram" type="text/html" description="Context Diagram"/>
-  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
 </fields>

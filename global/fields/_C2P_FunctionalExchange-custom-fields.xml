@@ -14,5 +14,4 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="description_reference" name="Beschreibungsverweise" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="referenziert in Beschreibung von" type="text/html" description="Grouped links backlinks for descriptions references."/>
   <field id="context_diagram" name="Kontextdiagram" type="text/html" description="Context Diagram"/>
-  <field id="realization_view" name="Realization View Diagram" type="text/html" description="Realization View Diagram"/>
 </fields>
