@@ -19,13 +19,13 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field id="layer" readOnly="false"/>
   </panel>
   <panel description="Custom Capella Fields">
-    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption,-context_diagram,-tree_view,-realization_view,-cable_tree" readOnly="false"/>
+    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption,-context_diagram,-realization_view, -nextTeam, -oldID, -notes" readOnly="false"/>
     <field id="context_diagram" readOnly="false"/>
     <field id="realization_view" readOnly="false"/>
   </panel>
   <panel description="Rationale and Assumption">
-    <field id="rationale" readOnly="true"/>
-    <field id="assumption" readOnly="true"/>
+    <field id="rationale" readOnly="false"/>
+    <field id="assumption" readOnly="false"/>
   </panel>
   <field id="comments"/>
   <field id="linkedWorkItems"/>
