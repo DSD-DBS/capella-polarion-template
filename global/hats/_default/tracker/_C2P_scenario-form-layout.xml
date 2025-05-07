@@ -18,12 +18,8 @@ SPDX-License-Identifier: Apache-2.0 -->
     <field id="parent_reverse" readOnly="true"/>
     <field id="layer" readOnly="false"/>
   </panel>
-  <panel description="Custom Capella Fields">
-    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption,-context_diagram,-tree_view,-realization_view,-cable_tree" readOnly="false"/>
-    <field id="context_diagram" readOnly="true"/>
-    <field id="tree_view" readOnly="true"/>
-    <field id="realization_view" readOnly="true"/>
-    <field id="cable_tree" readOnly="true"/>
+  <panel description="Custom Fields">
+    <field id="@allCustomFields,-owner,-sortOrder,-manualQuality,-qualitySuspect,-automatics,-language,-uuid_capella,-checksum,-parent,-parent_reverse,-layer,-rationale,-assumption,-context_diagram,-tree_view,-realization_view,-cable_tree,-nextTeam,-oldID,-notes" readOnly="false"/>
   </panel>
   <panel description="Rationale and Assumption">
     <field id="rationale" readOnly="false"/>
