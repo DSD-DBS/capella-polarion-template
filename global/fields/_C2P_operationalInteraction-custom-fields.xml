@@ -19,4 +19,5 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="realized_reverse" name="Realizing" type="text/html" description="Grouped links backlinks for realized."/>
   <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
   <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
+  <field id="involved_links_reverse" name="Involved interaction in" type="text/html" description="Grouped links backlinks for involved functional exchanges"/>
 </fields>
