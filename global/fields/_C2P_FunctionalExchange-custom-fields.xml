@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="parent" name="Elternteil" type="text/html" description="Grouped links for parent."/>
   <field id="parent_reverse" name="Kinder" type="text/html" description="Grouped links backlinks for parent."/>
   <field id="layer" name="Modellierungsebene" type="enum:_C2P_layer" description="The layer of the work item."/>
+  <field id="exchange_items" name="Austauschobjekte" type="text/html" description="Grouped links for exchange items."/>
   <field id="allocated_reverse" name="Allokiert von" type="text/html" description="Grouped links backlinks for allocated functional exchanges."/>
   <field id="diagram_elements_reverse" name="Diagramme" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="output_exchanges_reverse" name="Output exchange in" type="text/html" description="Grouped links backlinks for output functional exchanges."/>
   <field id="input_exchanges_reverse" name="Input exchange in" type="text/html" description="Grouped links backlinks for input functional exchanges."/>
   <field id="description_reference" name="Beschreibungsverweise" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="referenziert in Beschreibung von" type="text/html" description="Grouped links backlinks for descriptions references."/>
-  <field id="context_diagram" name="Kontextdiagram" type="text/html" description="Context Diagram"/>
 </fields>

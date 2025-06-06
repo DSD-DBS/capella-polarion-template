@@ -3,24 +3,18 @@
 SPDX-License-Identifier: Apache-2.0 -->
 <enumeration>
     <option id="text" name="Text" description="Jede Art von Text" iconURL="/polarion/icons/project/DBS_Glossary/DBS_standard_text.gif" sortOrder="0"/>
-    <option id="standardreq" name="Standards &amp; Normative Vorgabe" color="#F1ED92" description="Eine Norm oder eine gesetzliche Vorschrift." iconURL="/polarion/icons/default/enums/CMMI_training.gif" sortOrder="1"/>
-    <option id="stakeholderreq" name="Stakeholder Anforderung" color="#A280A9" default="true" description="Eine Forderung der Interessengruppen." iconURL="/polarion/icons/default/enums/type_businesscase.gif" sortOrder="2"/>
-    <option id="applicationCondition" name="Anwendungsbedingung" description="Eine Anwendungsbedingung (die anderen Stakeholdern auferlegt wird)" iconURL="/polarion/icons/default/enums/type_safety.png" sortOrder="3"/>
-    <option id="safetyreq" name="Sicherheits-Anforderung" description="Eine Sicherheitsanforderung" iconURL="/polarion/icons/default/enums/type_security_shield.png" sortOrder="4"/>
-    <option id="securityreq" name="Schutz-Anforderung" description="Eine Sicherheitsanforderung" iconURL="/polarion/icons/default/enums/type_security.png" sortOrder="5"/>
-    <option id="systemreq" name="Anforderung" color="#98989B" description="Eine Anforderung" iconURL="/polarion/icons/default/enums/type_purple_spec.png" sortOrder="6"/>
-    <option id="assumption" name="Annahme" description="Eine Annahme" iconURL="/polarion/icons/project/AR_DKS/DBS_favicon.gif" sortOrder="7"/>
-    <option id="reference" name="Referenz" description="Eine Referenz" iconURL="/polarion/icons/default/enums/type_requirement.gif" sortOrder="8"/>
-    <option id="glossary" name="Begriff" description="Ein Akronym, eine Abkürzung, ein Konzept, eine Definition oder ein Begriff" iconURL="/polarion/icons/project/configuration/DBS_GlossarAZ.gif" sortOrder="9"/>
-    <option id="task" name="Aufgabe" color="#909B9F" default="true" description="Eine Aufgabe, die erledigt werden muss." iconURL="/polarion/icons/default/enums/type_task.gif" sortOrder="10"/>
-    <option id="changerequest" name="Änderungsantrag (CR)" color="#89B68C" description="Ein Antrag auf Änderung des Aussehens der Funktionalität." iconURL="/polarion/icons/default/enums/type_changerequest.gif" sortOrder="11"/>
-    <option id="defect" name="Fehler/Problem" description="Ein identifizierter Fehler oder Problem " iconURL="/polarion/icons/default/enums/type_bug.gif" sortOrder="12"/>
-    <option id="testcase" name="Test Case" color="#D9B141" description="Ein Testfall" iconURL="/polarion/icons/default/enums/type_purple_testcase.png" sortOrder="13"/>
-    <option id="_placeholder" name="------ Capella Sync Work Items ------" description="Trenner" iconURL="/polarion/icons/default/enums/type_purple_testcase.png" sortOrder="14"/>
     <option id="diagram" name="Diagram" description="Graphische representation (Diagram) eines Elements oder mehrere Elementen." iconURL="/polarion/icons/group/Capella_Diagram.png" sortOrder="15"/>
     <option id="_C2P_Actor" name="Akteur" description="Beschreibt eine externale Entität, welche mit dem System interagiert." iconURL="/polarion/icons/group/Capella_Actor.gif" sortOrder="16"/>
     <option id="_C2P_Component" name="Komponente" description="Beschreibt ein System oder Teile davon." iconURL="/polarion/icons/group/Capella_System.gif" sortOrder="17"/>
     <option id="_C2P_Function" name="Funktion" description="Beschreibt eine Funktionalität des Systems welche in der Regel eine oder mehrere Operational Activities verfeinert." iconURL="/polarion/icons/group/Capella_SystemFunction.gif" sortOrder="18"/>
     <option id="_C2P_FunctionalExchange" name="Funktionsaustausch" description="Bezeichnet der Informationsaustausch zwischen zwei Funktionen." iconURL="/polarion/icons/group/Capella_FunctionalExchange.gif" sortOrder="19"/>
     <option id="_C2P_ComponentExchange" name="Schnittstelle" description="Repräsentiert die Verbindung zwischen zwei Komponenten, oder Zwischen einer Komponente und einem Akteur." iconURL="/polarion/icons/group/Capella_ComponentExchange.gif" sortOrder="20"/>
+    <option id="_C2P_Node" name="Knoten" description="Repräsentiert einen Knoten in der Systemarchitektur, welcher physische Elemente wie Hardware oder Software enthalten kann." iconURL="/polarion/icons/group/Capella_PhysicalComponentNode.gif" sortOrder="21"/>
+    <option id="_C2P_Behavior" name="Verhalten" description="Repräsentiert das Verhalten eines Systems oder eines Teils davon." iconURL="/polarion/icons/group/Capella_PhysicalComponentBehavior.gif" sortOrder="22"/>
+    <option id="_C2P_PhysicalPath" name="Physischer Pfad" description="Repräsentiert den physischen Pfad, welcher zwischen mehreren Knoten existiert." iconURL="/polarion/icons/group/Capella_PhysicalPath.gif" sortOrder="23"/>
+    <option id="_C2P_PhysicalLink" name="Kabel" description="Repräsentiert die physische Verbindung zwischen zwei Knoten." iconURL="/polarion/icons/group/Capella_PhysicalLink.gif" sortOrder="24"/>
+    <option id="_C2P_ExchangeItem" name="Austauschobjekt" description="Repräsentiert ein Objekt, welches zwischen zwei Komponenten oder Akteuren ausgetauscht wird." iconURL="/polarion/icons/group/Capella_ExchangeItem.gif" sortOrder="25"/>
+    <option id="_C2P_DataPkg" name="Datenpaket" description="Repräsentiert ein Paket von Daten, welches zwischen Komponenten oder Akteuren ausgetauscht wird." iconURL="/polarion/icons/group/Capella_DataPkg.gif" sortOrder="26"/>
+    <option id="_C2P_Class" name="Klasse" description="Repräsentiert eine Klasse in der Systemarchitektur, welche Attribute und Operationen enthalten kann." iconURL="/polarion/icons/group/Capella_Class.gif" sortOrder="27"/>
+    <option id="_C2P_Property" name="Eigenschaft" description="Repräsentiert eine Eigenschaft einer Klasse oder eines Objekts." iconURL="/polarion/icons/group/Capella_Property.gif" sortOrder="28"/>
 </enumeration>

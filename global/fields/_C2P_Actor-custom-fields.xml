@@ -9,6 +9,7 @@ SPDX-License-Identifier: Apache-2.0 -->
   <field id="layer" name="Modellierungsebene" type="enum:_C2P_layer" description="The layer of the work item."/>
   <field id="allocated" name="Allokiert" type="text/html" description="Grouped links for allocations."/>
   <field id="allocated_reverse" name="Allokiert von" type="text/html" description="Grouped links backlinks for allocations."/>
+  <field id="physical_links" name="Physische Verbindungen" type="text/html" description="Grouped links for physical links."/>
   <field id="diagram_elements_reverse" name="sichtbar in Diagramme" type="text/html" description="Grouped links backlinks for diagram elements."/>
   <field id="description_reference" name="Beschreibungsverweise" type="text/html" description="Grouped links for description references."/>
   <field id="description_reference_reverse" name="referenziert in Beschreibung von" type="text/html" description="Grouped links backlinks for descriptions references."/>
