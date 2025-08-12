@@ -23,7 +23,7 @@ a tedious task, it may be wise to do this via a migration script.
 In the global folder there are individual XML enumeration files for configuring
 work items individually. For distinguishing these configuration files from
 others a prefix (``_C2P``) has been used. The custom field XML files can be
-generated from the [script](https://github.com/DSD-DBS/capella-polarion-template/blob/main/scripts/generate_custom_fields.py)
+generated from the [script](https://github.com/dbinfrago/capella-polarion-template/blob/main/scripts/generate_custom_fields.py)
 in the scripts folder.
 
 # Licenses

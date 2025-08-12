@@ -4,7 +4,7 @@
 version = 1
 SPDX-PackageName = "Polarion DBS Project Template"
 SPDX-PackageSupplier = "Ernst Würger <ernst.wuerger@deutschebahn.com>"
-SPDX-PackageDownloadLocation = "https://github.com/DSD-DBS/capella-polarion-template"
+SPDX-PackageDownloadLocation = "https://github.com/dbinfrago/capella-polarion-template"
 
 [[annotations]]
 path = "template/.polarion/icons/**"
