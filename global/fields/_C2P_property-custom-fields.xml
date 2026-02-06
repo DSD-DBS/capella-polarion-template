@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- SPDX-FileCopyrightText: Copyright DB InfraGO AG and contributors
+SPDX-License-Identifier: Apache-2.0 -->
+<fields>
+    <field id="uuid_capella" name="UUID (Capella)" description="Corresponding Capella ID" type="string"/>
+    <field id="checksum" name="Checksum" description="A checksum-hash of the work item for efficient comparison for the SET Toolchain." type="string"/>
+    <field id="assumption" name="Assumption" description="Requirement text from a Requirement of type Assumption." type="text/html"/>
+    <field id="rationale" name="Rationale" description="Requirement text from a Requirement of type Rationale." type="text/html"/>
+    <field id="parent" name="Parent" description="Grouped links for parent." type="text/html"/>
+    <field id="diagram_elements_reverse" name="Diagrams" description="Grouped links backlinks for diagram elements." type="text/html"/>
+    <field id="parent_reverse" name="Children" description="Grouped links backlinks for parent." type="text/html"/>
+    <field id="constraints" name="Constraints" description="Grouped links for constraints." type="text/html"/>
+    <field id="description_reference" name="Description references" description="Grouped links for description references." type="text/html"/>
+    <field id="description_reference_reverse" name="Referenced in description by" description="Grouped links backlinks for descriptions references." type="text/html"/>
+    <field id="layer" name="Layer" description="The layer of the work item." type="enum:_C2P_layer"/>
+</fields>
